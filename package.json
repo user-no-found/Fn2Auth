@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "Pinned frontend build tooling for the Fn2Auth adapter",
+  "devDependencies": {
+    "pnpm": "10.8.0"
+  }
+}

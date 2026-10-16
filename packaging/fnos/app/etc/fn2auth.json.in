@@ -1,0 +1,20 @@
+{
+  "app_dir": "@app_dir@",
+  "state_dir": "@state_dir@",
+  "run_dir": "@run_dir@",
+  "prefix": "@GATEWAY_PREFIX@",
+  "trusted_gateway_accounts": ["root"],
+  "allowed_hosts": [],
+  "allowed_origins": [],
+  "external_origin_ports": {"http": [5666], "https": [5667]},
+  "allow_same_origin_fetch": true,
+  "max_users": 8,
+  "php_threads": 2,
+  "php_memory_mb": 128,
+  "request_body_mb": 16,
+  "startup_seconds": 120,
+  "shutdown_seconds": 30,
+  "idle_seconds": 900,
+  "connection_seconds": 3600,
+  "locale": "zh-CN"
+}

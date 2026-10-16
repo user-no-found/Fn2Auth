@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "source_file_sha256": "39d5e6cbbddae3826220b161b343c7fc22b3d60b5137fd4ee51c20c014ef5df2",
+  "decisions": {
+    "fn2auth.identity": {
+      "source_sha256": "edaf40b4191acc0601b135121cfee1260b63e3384494d25873f758ad6d2fc90e",
+      "action": "translate",
+      "reason": "简繁都将身份显示译为当前 NAS 用户，保留 {username}，不声称应用自行授予身份。"
+    },
+    "fn2auth.retry": {
+      "source_sha256": "d8b8392e2c542950ca64867168e4ef87d4ad606882d5898f826b51c6d553988f",
+      "action": "translate",
+      "reason": "简繁都按重试操作翻译，不含状态承诺。"
+    },
+    "fn2auth.cancel": {
+      "source_sha256": "19766ed6ccb2f4a32778eed80d1928d2c87a18d7c275ccb163ec6709d3eb2e27",
+      "action": "translate",
+      "reason": "简繁都按取消操作翻译。"
+    },
+    "fn2auth.session.failed": {
+      "source_sha256": "cf5e4e745064b0826d3117c229ccd88ded9a3cc24c282a613100bd47c613df99",
+      "action": "translate",
+      "reason": "简繁都保留 HTTP 与 {status}，说明会话不可用并提示从 fnOS 重新打开；fnOS 为品牌保留。"
+    },
+    "fn2auth.session.network": {
+      "source_sha256": "f99655f865cc14d712128a484af00f2bcda3b435fb6cf40ce60cf27fda67d427",
+      "action": "translate",
+      "reason": "简繁都明确无法连接 NAS，并提示检查网络，保留 NAS 通用缩写。"
+    },
+    "fn2auth.session.timeout": {
+      "source_sha256": "47416b0c0d9201a678b14475a2e1a095baf8e7ac1ad7da0b273805ee5365d7e5",
+      "action": "translate",
+      "reason": "简繁都保留超时后结果未知、重提之前先检查状态的关键限制，不误称已取消。"
+    },
+    "fn2auth.session.invalid": {
+      "source_sha256": "8995fb8c78ea3b2267ca4f78b70a3a3a6341e6b98aed569bd50fb46283a63420",
+      "action": "translate",
+      "reason": "简繁都表示会话响应无效并建议从 fnOS 重开，不伪称登录已过期。"
+    },
+    "fn2auth.session.retry": {
+      "source_sha256": "ed72f3dfd1b5ed05588041718dcecfa689e9c038f80e18be0af63b72464b964e",
+      "action": "translate",
+      "reason": "简繁都表达重新加载整个应用，与一般重试按钮区分。"
+    },
+    "fn2auth.camera.title": {
+      "source_sha256": "4340be8832cd317a981ecc397d06c2ed8375a03e7ec8bbe139af2611956f86bc",
+      "action": "translate",
+      "reason": "简体使用验证器二维码，繁体使用驗證器 QR 碼，表达 OTP 账号专用扫描入口。"
+    },
+    "fn2auth.camera.start": {
+      "source_sha256": "a69bc55cbe5841a74a18af0ed769632b3a0729abb64043108461a0f190f6df6e",
+      "action": "translate",
+      "reason": "简繁都表达启动相机操作，简体使用摄像头、繁体使用相機。"
+    },
+    "fn2auth.camera.stop": {
+      "source_sha256": "c2e8e6cf56113fb669a6172fd0d5681926aa53e6ca829ba2046bd3d4c2543155",
+      "action": "translate",
+      "reason": "简繁都表达停止相机操作，简体使用摄像头、繁体使用相機。"
+    },
+    "fn2auth.camera.device": {
+      "source_sha256": "03494b0d1f803522a3497d751eaaf6f987883cd4fe0b0e66baf67a662ae231b2",
+      "action": "translate",
+      "reason": "简体摄像头、繁体相機，作为设备选择标签，与本命名空间其他文案一致。"
+    },
+    "fn2auth.camera.defaultDevice": {
+      "source_sha256": "126999a0c226430deaf521c72e4f1ab8723f06b4e41bc2a49db6f5ccd44d9bbb",
+      "action": "translate",
+      "reason": "简繁都保留默认和后置两个属性，不承诺设备一定提供后置相机。"
+    },
+    "fn2auth.camera.image": {
+      "source_sha256": "9918aaf803c54fcfc96b8449ca5d3d1f22c38b92fb0d4c3574f8a4d4c9e4925b",
+      "action": "translate",
+      "reason": "简繁都表达选择二维码图片，允许相册或文件入口，不限定桌面快捷键。"
+    },
+    "fn2auth.camera.photo": {
+      "source_sha256": "543adf92f12caf4bfa761ce90799f1d081aff604fd81811dbea5ef363d025af8",
+      "action": "translate",
+      "reason": "简繁都表达拍摄二维码照片，与实时扫描、已有图片三个入口区分。"
+    },
+    "fn2auth.camera.manual": {
+      "source_sha256": "684423247d0a6a637f6d6086afb0c83cffbb0f29b6413933c1bea05caf3cedc8",
+      "action": "translate",
+      "reason": "简繁都表达手动输入 OTP 账号，不译为 NAS 用户登录。"
+    },
+    "fn2auth.camera.idle": {
+      "source_sha256": "4564e75c298e395724cc07bd8eaba9d321970ef9c5abb7a5770194ee27e36009",
+      "action": "translate",
+      "reason": "简繁都说明启动才申请相机权限，同时保留选择照片的替代入口。"
+    },
+    "fn2auth.camera.permission": {
+      "source_sha256": "1742481f0bf73105cedcc62551dc104293fbd0b787377403a3e2fc582dca67d0",
+      "action": "translate",
+      "reason": "简繁都表达等待权限的进行状态，不声称权限已获得。"
+    },
+    "fn2auth.camera.playback": {
+      "source_sha256": "9d121cf7efb7bdae619eba3fb38b8788d7411d7f64784ad88a3a7029f5fa4a7d",
+      "action": "translate",
+      "reason": "简繁都表达准备预览状态，与等待授权和扫描状态区分。"
+    },
+    "fn2auth.camera.scanning": {
+      "source_sha256": "91d8f41da7582db8d4fc21407664a512e8d3bce51d17b67cb6d69dc33d3f23e9",
+      "action": "translate",
+      "reason": "简繁都提示对准验证器二维码，非泛化为任何二维码。"
+    },
+    "fn2auth.camera.decoding": {
+      "source_sha256": "45c2df8837f8b6b3692758e614ebd63fcd5be62447c18328b2da48e467a6c9c1",
+      "action": "translate",
+      "reason": "简繁都表达读取二维码图片的进行状态，不提前声称导入成功。"
+    },
+    "fn2auth.camera.validating": {
+      "source_sha256": "1829d6c12448fafa434890360644df362e938cce1fbdb0c1ce7050e734c7a112",
+      "action": "translate",
+      "reason": "简繁都表示通过 NAS 校验账号的进行状态，不声称已保存。"
+    },
+    "fn2auth.camera.paused": {
+      "source_sha256": "0b364a6b2cc6a14070481bf5416ee6cfdf1ec078b1140d43e49dc31badeef202",
+      "action": "translate",
+      "reason": "简繁都表示相机已停止并可重启，避免误解成仍后台扫描。"
+    },
+    "fn2auth.camera.picker": {
+      "source_sha256": "95a942655cfe23d0ee74e19911dac866e953b1bc011c3153cb6b838a6869fdd0",
+      "action": "translate",
+      "reason": "简繁都保留相机无法打开时用手机拍照再选择图片的建议。"
+    },
+    "fn2auth.camera.photoHelp": {
+      "source_sha256": "1572b2de1ba4b3d47cb7b2dba2857207337e68633746137297d873ca645e83e3",
+      "action": "translate",
+      "reason": "简繁都提示当前屏幕二维码可截图，并明确图片选择界面由设备提供，不保证相册独占。"
+    },
+    "fn2auth.camera.insecure": {
+      "source_sha256": "c420729c8b9e79091fc488734231393c2889a56ccb7aee570e55770145aa2dbc",
+      "action": "translate",
+      "reason": "简繁都保留安全浏览器上下文条件、HTTPS 与图片替代入口，不宣称普通 HTTP 可实时访问。"
+    },
+    "fn2auth.camera.unsupported": {
+      "source_sha256": "b3786d28825bc402b5f2b89f6a18e9468c96a2b0248c67baa1327f1416003e5f",
+      "action": "translate",
+      "reason": "简繁都区分当前窗口不支持相机与权限拒绝，并保留图片或受支持 HTTPS 浏览器替代入口。"
+    },
+    "fn2auth.camera.denied": {
+      "source_sha256": "7588869c4220191988a3c48d411ebad5af739ff4a9320543b2df3ee9f950788c",
+      "action": "translate",
+      "reason": "简繁都涵盖浏览器、系统、应用窗口三个拒绝来源，不把失败归因于 NAS 权限。"
+    },
+    "fn2auth.camera.missing": {
+      "source_sha256": "cb20c68556c47f8d1a18be9dd6fc49b1fa42499a7bb28fb88ad8c6d688db2e3b",
+      "action": "translate",
+      "reason": "简繁都表达找不到相机，并提供连接相机或选图建议。"
+    },
+    "fn2auth.camera.busy": {
+      "source_sha256": "0a1eff6ff1c056f0e7d1080819048180f5551107207abd8a8c7d5d5cd71fbe02",
+      "action": "translate",
+      "reason": "简繁都保留不可用或被其他应用占用两种可能性，不确定断言占用来源。"
+    },
+    "fn2auth.camera.constraints": {
+      "source_sha256": "3a94304b3cd892b0f2e8e5db0a6969c4f9b18bed026a5bb1bbdc7050f4331912",
+      "action": "translate",
+      "reason": "简繁都表达所选设置不兼容并建议默认相机，不编造具体分辨率。"
+    },
+    "fn2auth.camera.permissionTimeout": {
+      "source_sha256": "b7563502d7df428923976443bf84ee7e8369f72d170dd38e50c2d8482ba389a3",
+      "action": "translate",
+      "reason": "简繁都表达相机请求未完成，不把超时等同明确拒绝，保留重试和选图建议。"
+    },
+    "fn2auth.camera.playbackTimeout": {
+      "source_sha256": "f2b7ab2fddce51651d7278da95c8def69d5fb289f816494fc7649f849ed4d11f",
+      "action": "translate",
+      "reason": "简繁都明确预览未启动，与授权等待超时区分。"
+    },
+    "fn2auth.camera.decodeTimeout": {
+      "source_sha256": "c741ecf8c61ad38adff67a5281e05cce4c7286cea7e5239d8063d586f983eacc",
+      "action": "translate",
+      "reason": "简繁都明确图片辨识超时，并提供围绕二维码裁剪的建议。"
+    },
+    "fn2auth.camera.decoder": {
+      "source_sha256": "d39788e55ed8f63cec3702a98d4aafcd2422df77ae4383d2deb2099000e064ad",
+      "action": "translate",
+      "reason": "简繁都将 local reader 译为本地或本机二维码读取器，保留重载与手工输入建议。"
+    },
+    "fn2auth.camera.imageTooLarge": {
+      "source_sha256": "e1236c28c8adff338bc687d6c38b077dff0b53c902eab599857d07b732165787",
+      "action": "translate",
+      "reason": "简繁都表达图片过大但不编造最大大小数值，保留裁剪或截图建议。"
+    },
+    "fn2auth.camera.imageUnsupported": {
+      "source_sha256": "802c28b863089d0651898999b6da8f70fb201a71acf56e9c1392cc09cccd462b",
+      "action": "translate",
+      "reason": "简繁都保留 PNG、JPEG、WebP 格式名，说明当前图片不可读取并建议截图。"
+    },
+    "fn2auth.camera.notFound": {
+      "source_sha256": "d730c38d336acb1f40d5ac85789f1ba7c06108c1bd9b91de7a7da10ba9de4686",
+      "action": "translate",
+      "reason": "简繁都表达没有发现二维码，不误称账号无效，保留清晰图片或裁剪建议。"
+    },
+    "fn2auth.camera.invalid": {
+      "source_sha256": "2dad0afe5dbda34f9bb8bead951913a0fd542754c25fd7ed4df9ee4644930206",
+      "action": "translate",
+      "reason": "简繁都明确账号二维码或迁移码不有效，与未发现任何二维码区分。"
+    },
+    "fn2auth.camera.unknown": {
+      "source_sha256": "a8bef2871f6b5913b99d5846b9b00f249472d236a8e4d41407b01639e4a56291",
+      "action": "translate",
+      "reason": "简繁都采用未能启动的未知失败表述，不编造权限原因，保留三个后续入口。"
+    },
+    "fn2auth.backup.title": {
+      "source_sha256": "0e6b09c31f1efa2e5cdc6d4c1ba87da49060a3bb66ddf0fe1923874304106517",
+      "action": "translate",
+      "reason": "简繁均表达加密备份；不扩大为全库灾难恢复。"
+    },
+    "fn2auth.backup.description": {
+      "source_sha256": "63e908e1280530fb596f5e548f6b7bb57aa2f94ac9156546cc086730e98721ce",
+      "action": "translate",
+      "reason": "简繁均明确仅 OTP 账号的加密导出及导入前预览，不含分组、图标及偏好设置，不宣称全库灾备，保持当前备份功能的范围。"
+    },
+    "fn2auth.backup.passphrase": {
+      "source_sha256": "da889c4dbe288726b5a6cf0ffed7bc791f9f561fad13bca28560e209cd1cd32a",
+      "action": "translate",
+      "reason": "简体口令、繁体通關密語，区分备份解密凭据与 NAS 登录密码。"
+    },
+    "fn2auth.backup.passphraseHelp": {
+      "source_sha256": "d7c6443eb8b4d1ec4709cfc678f8c7bae3ab8ac66435ad3495890c5dcf2172b1",
+      "action": "translate",
+      "reason": "简繁都保留 10 至 1024 字符范围及需安全保管、恢复时必须使用的限制；繁体使用字元。"
+    },
+    "fn2auth.backup.export": {
+      "source_sha256": "0a729b90dd3209836d423175bface6c12031b2fe1bf1c94113602c4d476b1b13",
+      "action": "translate",
+      "reason": "简繁都表示下载加密备份，不误写为直接保存未加密数据。"
+    },
+    "fn2auth.backup.file": {
+      "source_sha256": "b5b68ffb03e2b8fb3cbc0c62118af16ac23af420cff48cc2ca0f868ebb372a8a",
+      "action": "translate",
+      "reason": "简繁均保留 Fn2Auth 与 .age 文件格式标识，不承诺支持旧备份格式。"
+    },
+    "fn2auth.backup.preview": {
+      "source_sha256": "ccc72500857f8c44de9193e471d6b0011b44558ba77094cf130525c5bcec8420",
+      "action": "translate",
+      "reason": "简繁均表达预览阶段，与真正导入区分。"
+    },
+    "fn2auth.backup.confirm": {
+      "source_sha256": "4ca48b4230a55dc069bef81d164b7c06d65f6479950226969548ffc74e8b420c",
+      "action": "translate",
+      "reason": "简繁均明确确认后执行导入，繁体使用匯入。"
+    },
+    "fn2auth.backup.working": {
+      "source_sha256": "39dbe7bd6732a5f1fd75ffe3910ac9d63de94bf25c6cbb79c01f20f59d2ce677",
+      "action": "translate",
+      "reason": "简繁均为处理中的状态，不宣称已完成备份。"
+    },
+    "fn2auth.backup.cancel": {
+      "source_sha256": "6790dc5a6b6cafd734221f4c8b4a775f5e849be800b3d49fdd96707271adc628",
+      "action": "translate",
+      "reason": "简繁都表示取消并丢弃预览，不暗示删除现有金库数据。"
+    },
+    "fn2auth.backup.expires": {
+      "source_sha256": "1a8ff03a8bcaf75d27177368c037aa520668a69589e2daa8f0bbae0193bb03b9",
+      "action": "translate",
+      "reason": "简繁都保留 5 分钟有效期及确认前检查账号的要求。"
+    },
+    "fn2auth.backup.existing": {
+      "source_sha256": "2dbc546658ab711da8f214fdeaba7389cc7068a69b4b7324ecdd94ca5ede6ba2",
+      "action": "translate",
+      "reason": "简繁均为账号已存在的状态，不暗示覆盖或删除重复项。"
+    },
+    "fn2auth.backup.new": {
+      "source_sha256": "b8773d75259ed491a2781f97af8d7ea104b5b7203f7cf7b32522804f8b9ff0d9",
+      "action": "translate",
+      "reason": "简繁均表示新 OTP 账号，与 NAS 用户创建区分。"
+    },
+    "fn2auth.backup.counter": {
+      "source_sha256": "8e96608b4f719dc37dbca60e67a5dff453e8aed2d1449e5e3b61eda5eae8d214",
+      "action": "translate",
+      "reason": "简繁保留 HOTP 协议名与 {counter} 插值，统一计数器术语。"
+    },
+    "fn2auth.backup.completed": {
+      "source_sha256": "7a1e6e154211a21809624e181ff029f57e38b2d0ecbd30f62149ec1eda39c123",
+      "action": "translate",
+      "reason": "简繁保留 {imported}/{skipped}/{updated} 三个计数插值，分别表达导入、跳过和更新 HOTP 计数器；不误写为重置或回退计数器。"
+    },
+    "fn2auth.backup.exported": {
+      "source_sha256": "427b78fafd0c2145daea96f7116bd8184309d3f8b2de79aa2f927938aafa7471",
+      "action": "translate",
+      "reason": "简繁都表示备份已可下载，不提前声称用户已下载或已妥善保存。"
+    },
+    "fn2auth.backup.passphraseInvalid": {
+      "source_sha256": "3d8615b213bba59a1a214e4b8b8bdab91a0c0a63604326519c2aeb79a8464d81",
+      "action": "translate",
+      "reason": "简繁保留 10 至 1024 字符范围，繁体字元并非字数或字节数。"
+    },
+    "fn2auth.backup.fileInvalid": {
+      "source_sha256": "55938aa1bf70eef06e802ac731d1f908232304e652013c6e02a05bcfeff571fd",
+      "action": "translate",
+      "reason": "简繁都保留上限含等值的“不超过 8 MiB”，MiB 单位不改成 MB。"
+    },
+    "fn2auth.backup.backup_invalid_request": {
+      "source_sha256": "5813bde2b217e10d7ed90132bf2409125bbb30079bdcf580268382f341360672",
+      "action": "translate",
+      "reason": "简繁表示请求无效并提示检查文件和口令，不编造具体错误原因。"
+    },
+    "fn2auth.backup.decryption_failed": {
+      "source_sha256": "952df5e23d2ad991cb1280bb4bd6a552c793f84f8353f25f1a33b0fbd6adb4bc",
+      "action": "translate",
+      "reason": "简繁明确解密失败并提示核对口令和文件，不误判必然是密码错误。"
+    },
+    "fn2auth.backup.preview_expired": {
+      "source_sha256": "ff9af8925a99ca5f003aea89118d03fb7fa21926837fe2c7db2de5d079179a9a",
+      "action": "translate",
+      "reason": "简繁表达预览已失效，要求先重新预览再导入。"
+    },
+    "fn2auth.backup.preview_conflict": {
+      "source_sha256": "1572830acf8a6924f1fad91a66a0051ee43fbc06612cc1f68764ce8b12b15e19",
+      "action": "translate",
+      "reason": "简繁表达预览后金库数据变化，需要重新预览；不宣称金库损坏。"
+    },
+    "fn2auth.backup.backup_unavailable": {
+      "source_sha256": "f2e5e89b498ec694f67a9fbef88c6cb57dc30244129ee591f5119eefb4250837",
+      "action": "translate",
+      "reason": "简繁保留当前暂不可用和稍后重试语义。"
+    },
+    "fn2auth.backup.session_required": {
+      "source_sha256": "7c8f82fea3287d1655af982636d4ecbe55b044439f4e7487a6694c60458f7dc9",
+      "action": "translate",
+      "reason": "简繁表达 NAS 会话失效与重新加载登录，不声称备份数据丢失。"
+    },
+    "fn2auth.backup.failed": {
+      "source_sha256": "dfb7597655db29793bdd1655dc32cf018b6a8963ce087ed2917e824ff2b67bfc",
+      "action": "translate",
+      "reason": "简繁都提醒重复导入之前先检查金库，避免将操作失败误解为一定未产生副作用。"
+    }
+  }
+}

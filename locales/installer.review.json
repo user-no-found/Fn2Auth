@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "source_file_sha256": "4205876f966ee7ce79a3ceeac47782691bf99ffd5177294d73e7bc1aca0a5485",
+  "decisions": {
+    "installer.uninstall_title": {
+      "source_sha256": "8e479c4681d22ca2bd6da6d1546b4086743844f31ee20d860d05d5168e08e0c7",
+      "action": "translate",
+      "reason": "卸载向导的数据处理标题，避免将栏目标题误译为直接删除操作。"
+    },
+    "installer.data_label": {
+      "source_sha256": "4c2d507b0134330e7a8c1799c0505f2fd00d895ed5bfe774ddc048c3276d6d6c",
+      "action": "translate",
+      "reason": "保留 Fn2Auth 品牌，明确所选对象为本应用用户数据。"
+    },
+    "installer.retain": {
+      "source_sha256": "ad6dbc5a6f64c3ff4fcecf1b6ff2534fdba2cfdaebe75e1f9943068404aff033",
+      "action": "translate",
+      "reason": "保留数据选项，准确表达卸载时数据保留行为。"
+    },
+    "installer.delete": {
+      "source_sha256": "aec62712d0e3a6c092fb7639529980cee9f33baf1a4026c40949e253eb255a23",
+      "action": "translate",
+      "reason": "保留永久、所有和 Fn2Auth 三个重要限定，明确不可恢复删除的范围仅限本应用的用户数据。"
+    }
+  }
+}

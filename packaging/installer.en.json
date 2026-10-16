@@ -1,0 +1,6 @@
+{
+  "installer.uninstall_title": "Uninstall data",
+  "installer.data_label": "Fn2Auth user data",
+  "installer.retain": "Keep data",
+  "installer.delete": "Permanently delete all Fn2Auth user data"
+}

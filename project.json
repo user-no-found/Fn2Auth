@@ -1,0 +1,42 @@
+{
+  "app_id": "fn2auth",
+  "display_name": "Fn2Auth",
+  "description": "飞牛系统免登的验证码应用，每位用户拥有独立金库。",
+  "version": "0.0.1",
+  "upstream": "user-no-found/Fnbak-2FAuth",
+  "upstream_policy": "default-branch-head",
+  "gateway_prefix": "/app/fn2auth",
+  "gateway_socket": "app.sock",
+  "branding": {
+    "icon": {
+      "source": "assets/app-icon.png",
+      "variants": {
+        "64": "assets/app-icon-64.png"
+      }
+    }
+  },
+  "buildflow": {
+    "schema": 1,
+    "requires": ">=0.1,<0.2",
+    "targets": [
+      "fpk"
+    ],
+    "steps": [],
+    "artifacts": []
+  },
+  "fnpackkit": {
+    "schema": 1,
+    "requires": ">=0.1,<0.2",
+    "adapter": "scripts/build.py:plan",
+    "capabilities": {
+      "js_sdk": true,
+      "api_scopes": []
+    }
+  },
+  "build": {
+    "architectures": [
+      "amd64",
+      "arm64"
+    ]
+  }
+}

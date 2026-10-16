@@ -1,0 +1,39 @@
+#!/bin/sh
+# Dispatch fnOS callbacks without reading shell profiles or credential files.
+set -eu
+umask 077
+: "${TRIM_APPDEST:?}"
+: "${TRIM_PKGETC:?}"
+: "${TRIM_PKGVAR:?}"
+: "${TRIM_PKGTMP:?}"
+app=$(readlink -f -- "$TRIM_APPDEST")
+etc=$(readlink -f -- "$TRIM_PKGETC")
+state=$(readlink -f -- "$TRIM_PKGVAR")/fn2auth
+run=$(readlink -f -- "$TRIM_PKGTMP")/fn2auth
+config=$etc/fn2auth.json
+fail() {
+    if [ -n "${TRIM_TEMP_LOGFILE:-}" ]; then printf '%s\n' "$1" > "$TRIM_TEMP_LOGFILE"; fi
+    printf '%s\n' "$1" >&2
+    exit 1
+}
+prepare() {
+    [ "$(id -u)" != 0 ] || fail package_account_required
+    for directory in "$state" "$run"; do
+        [ ! -L "$directory" ] || fail unsafe_state_path
+        if [ ! -d "$directory" ]; then mkdir -- "$directory" || fail state_directory_failed; fi
+        [ "$(stat -c %u -- "$directory")" = "$(id -u)" ] || fail state_owner_mismatch
+        [ "$(stat -c %a -- "$directory")" = 700 ] || fail state_permissions_mismatch
+    done
+    "$app/bin/fn2auth" configure --config "$config" --template "$app/etc/fn2auth.json" \
+        --app-dir "$app" --state-dir "$state" --run-dir "$run" || fail configuration_failed
+}
+case "${1:-}" in
+    install_callback|upgrade_callback|config_callback) prepare ;;
+    config_init) [ ! -f "$config" ] || "$app/bin/fn2auth" status --config "$config" >/dev/null || [ "$?" = 3 ] ;;
+    upgrade_init|uninstall_init)
+        if [ -f "$config" ]; then "$app/bin/fn2auth" stop --config "$config" || fail stop_incomplete; fi ;;
+    start) prepare; "$app/bin/fn2auth" start --config "$config" || fail start_failed ;;
+    stop) [ ! -f "$config" ] || "$app/bin/fn2auth" stop --config "$config" ;;
+    status) [ -f "$config" ] || exit 3; exec "$app/bin/fn2auth" status --config "$config" ;;
+    *) fail unknown_lifecycle_action ;;
+esac

@@ -1,0 +1,66 @@
+{
+  "frankenphp": {
+    "version": "1.12.7",
+    "php_version": "8.5.11",
+    "architectures": {
+      "amd64": {
+        "url": "https://github.com/php/frankenphp/releases/download/v1.12.7/frankenphp-linux-x86_64-gnu",
+        "sha256": "95dce2e3407a84e8024a8fadb4c85a75c52e8362b68a450db37af91a040e9ef0"
+      },
+      "arm64": {
+        "url": "https://github.com/php/frankenphp/releases/download/v1.12.7/frankenphp-linux-aarch64-gnu",
+        "sha256": "5b75362b2806ac61df5d43113254fa664f0b2c3e42cf41623e1d9a7d933327e9"
+      }
+    }
+  },
+  "composer": {
+    "version": "2.10.3",
+    "url": "https://getcomposer.org/download/2.10.3/composer.phar",
+    "sha256": "7a2d379d5b8ffdaa028580ef26494c36d2feef4b178d3dd1473a4dbc5e17c8d6"
+  },
+  "php_extensions": [
+    "bcmath",
+    "ctype",
+    "curl",
+    "dom",
+    "fileinfo",
+    "filter",
+    "gd",
+    "hash",
+    "iconv",
+    "json",
+    "libxml",
+    "mbstring",
+    "openssl",
+    "pcre",
+    "PDO",
+    "pdo_sqlite",
+    "Phar",
+    "session",
+    "sodium",
+    "sqlite3",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlwriter",
+    "zip",
+    "zlib"
+  ],
+  "licenses": [
+    {
+      "name": "FRANKENPHP-LICENSE",
+      "url": "https://raw.githubusercontent.com/php/frankenphp/a765b086f5cc56f6b7753117367d56e1b0da948d/LICENSE",
+      "sha256": "96e04afcae74c52f02e43e693c97b5ba0c64694ba44c1c642d7f242cfe21d18c"
+    },
+    {
+      "name": "PHP-LICENSE",
+      "url": "https://raw.githubusercontent.com/php/php-src/php-8.5.11/LICENSE",
+      "sha256": "b42e4df5e50e6ecda1047d503d6d91d71032d09ed1027ba1ef29eed26f890c5a"
+    },
+    {
+      "name": "CADDY-LICENSE",
+      "url": "https://raw.githubusercontent.com/caddyserver/caddy/v2.11.6/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

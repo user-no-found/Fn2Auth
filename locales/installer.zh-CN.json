@@ -1,0 +1,6 @@
+{
+  "installer.uninstall_title": "卸载时的数据处理",
+  "installer.data_label": "Fn2Auth 用户数据",
+  "installer.retain": "保留数据",
+  "installer.delete": "永久删除所有 Fn2Auth 用户数据"
+}

@@ -1,0 +1,1031 @@
+{
+  "schema": 1,
+  "source_files": {
+    "en": "3446afa5fb0a9cd2afa867360387e0a277aff783808b218c2041316f51623168",
+    "zh-CN": "20dea337532b7606ae87ad46a99fcf14f932d85940c71c5f44fd4e512db11ca8",
+    "zh-TW": "45ae097cd43f5db2c2ed62db6b3d3d98e82fc7ff914c8d8877c98c9558c9e397"
+  },
+  "upstream_sha": "2023d6873eafa89d50cc331ca02c4d46acd60913",
+  "components_sha": "98b889f3d785f79a20397e12097a664846672ee7",
+  "source_inventory": {
+    "upstream/resources/js/App.vue": "a461db1f271a4da5f77d20a3cc5813216be890ec3df3843e7cac46245c81e64b",
+    "upstream/resources/js/app.js": "ef97914b14f1763c3d0fe388f6d9f1ea92c1146499921d1aa636cf07d279740e",
+    "upstream/resources/js/components/AccessLogViewer.vue": "29d9a8ceb2019d07886adc6b2e97aa15f2afc796a60e784039bbab1925716d60",
+    "upstream/resources/js/components/ActionButtons.vue": "c9d342c5bf0032e378594aa4de3ebe99d3666db6c0d2d77503dcd4ec234109a1",
+    "upstream/resources/js/components/CopyButton.vue": "551fc838281bca88527d21b3f76050fb0b3f42d14e3386542a5b0b121a12f18f",
+    "upstream/resources/js/components/DestinationGroupSelector.vue": "49e63854f10a2799dfa715fa382822456f10a1a88229194bd361061042c69363",
+    "upstream/resources/js/components/ExportButtons.vue": "ae780c3e4748267ae42daeb7d491ce80d449220d7aa550b772587785ff968dc1",
+    "upstream/resources/js/components/LogItem.vue": "defbd90fa6c3b654078a7869ded86ebd86c6844c12fe2e43bbae82f08d8c6e0f",
+    "upstream/resources/js/components/LogViewer.vue": "0971b3b28d4177625e096360ea2f531d5beeec807eb602e48d454842da2d6ae0",
+    "upstream/resources/js/components/QrContentDisplay.vue": "fda9c6ac3368c6ab2f4803748ee1346ca31a532961487bba43085b6efc957ec2",
+    "upstream/resources/js/components/SsoConnectLink.vue": "368b6fa17be9cbcc33e0ba79668d83ea1c0cbd1efd80ed538beaebdf9bbc2a77",
+    "upstream/resources/js/components/Toolbar.vue": "9cdfc22a0f2721a371befcc44e7ea586cee45fd5c816c5ee1c45cee237442d50",
+    "upstream/resources/js/components/TwofaccountMedia.vue": "02911ab8f6453445c594359414da69063f810c8b5102e4a98b7fcd6f4c5bba78",
+    "upstream/resources/js/components/VersionChecker.vue": "075931b1b189429ef27e6d7e35f347a94cec0d4ad9bef50b7a0023952c82d4b0",
+    "upstream/resources/js/components/formElements/Form.js": "b18a2347f9b200043303186a947f02f64f11a45d04ef9714687ad06e8139c178",
+    "upstream/resources/js/components/formElements/FormErrors.js": "12af8c02b97034514e77dcbf710df6feb938d3e21be42cb706f6bbdb098e4a10",
+    "upstream/resources/js/composables/appSettingsUpdater.js": "2cc8bf9d371c0320a82b48872e78831032a7bfab98c6994cdb40d677cf60cabd",
+    "upstream/resources/js/composables/breakpoints.js": "bbc2f05a0e0aabb8435b72a00842569ca19be507a6c2e55d1cd8ecbd7e87b1bd",
+    "upstream/resources/js/composables/helpers.js": "f60a0291c82e026a9eed457eb101e9a40e51015e1b36c15d8a928e7111917558",
+    "upstream/resources/js/composables/useI18n.ts": "9eafe265a5f5e52067c00a5ce45ea00be1748ae076ff773c67888642ac6e8c94",
+    "upstream/resources/js/helpers.js": "6e24b515c1c6445761f96a6e7f306cdff51888888b2b678412975d091f559a79",
+    "upstream/resources/js/i18n.ts": "04c2ae9a52e508b8b2ae844fffd8e0991d9c409fd2822c0a842733b035e8ccd1",
+    "upstream/resources/js/layouts/ListItem.vue": "22a6b8fef641518f7a2a5f0d89330eb2e8cd858b52412a13d6d43cdc25d00f47",
+    "upstream/resources/js/router/index.js": "b1b1a46bca41f60a58f0dff4469ee7fb571e0eef238727a198163232e21efa92",
+    "upstream/resources/js/router/middlewarePipeline.js": "890e24d112fca5eba4309100bf51264537caf90e6b08c731b42c75234c11f642",
+    "upstream/resources/js/router/middlewares/adminOnly.js": "ba04734046df87e51e195ec1fb5d9b70810b98426eea6eafbbb87db8a2b095ad",
+    "upstream/resources/js/router/middlewares/authGuard.js": "cf760e42523d1f072f72c101580eaf7cf4bbe5269bd311259f82e5e7cbfac8fa",
+    "upstream/resources/js/router/middlewares/noEmptyError.js": "76d1332c2933a0443f2adea287a508da717ad964425a047bf003667cd0d9e99b",
+    "upstream/resources/js/router/middlewares/noRegistration.js": "6f1154bf00d26cc5ff72c7d80626c2a7b1c918f2f10072724ae6e2c23aeef03a",
+    "upstream/resources/js/router/middlewares/ownerOnly.js": "7d2e6e7f24cf1251f2639315e10534c5a5e54727d5dd89de78e112bfabe7c486",
+    "upstream/resources/js/router/middlewares/setReturnTo.js": "073e2b87ed693282bd4e8b03c9e4d0116dda7f25c813aa9c7b8e052d2977d651",
+    "upstream/resources/js/router/middlewares/skipIfAuthProxy.js": "158bec4c05270d52db24cb59518af2f7c9c2ab1ea0aaabbffa273636e647f0e2",
+    "upstream/resources/js/router/middlewares/skipIfSharingDisabled.js": "08e1044dded4d8aa5824c52af8f12944e0b0c1f2f1411486d5e66dfeb7a2697a",
+    "upstream/resources/js/router/middlewares/starter.js": "f567ac985e57897f10808c916d088984ac7e4ed5f61bbe6c06c29e6178b9aced",
+    "upstream/resources/js/router/middlewares/syncAppSettings.js": "6e529327c7e7853039df01cee0ab9a917a46e27a1577a04765dc01a9e53f6bf9",
+    "upstream/resources/js/services/appSettingService.js": "5637776e54a2c39fe103495a8f94531060ba80087de2f6cb72dcfdf775e178e8",
+    "upstream/resources/js/services/authService.js": "c5426b303a88700625b483fc4dee996304da3b53ebe842c7a3b02c527e5a21e2",
+    "upstream/resources/js/services/groupService.js": "5c655888b7e76e974d95b7a14244e132ed8b9853ed656611d16fa71c873eb602",
+    "upstream/resources/js/services/httpClientFactory.js": "f567cd2a53bec3cf2fc182b3d27d2191db50e567d08cd569ec85b47c22d27b59",
+    "upstream/resources/js/services/iconService.js": "1199edc2fdebde86446d8980dd8d870509a378616096b122fc6fe1b69213c953",
+    "upstream/resources/js/services/shareService.js": "9feef3c833c2af4e89339e2c67b29722f9ecc5e97fd8a4825d5ddca6fb2fca16",
+    "upstream/resources/js/services/systemService.js": "a5e62ee97eca753aae8dbbe562616991e372bc153829338e39750b7272da21f7",
+    "upstream/resources/js/services/twofaccountService.js": "ed46c925ba0c7af5ea054579079c4821f3d6df58259e88c536cccdd5368ebce4",
+    "upstream/resources/js/services/userService.js": "e4c5a1efd3c55debbe3352a57100c947a4568b9fe8d73aace1badf3e3d272eb0",
+    "upstream/resources/js/services/webauthn/identifyAuthenticationError.js": "9afbe241438eb8cb62432086ed0f662abaf7b6db820e437462b7633e439c3f81",
+    "upstream/resources/js/services/webauthn/identifyRegistrationError.js": "869f826c0b7cf987db7ccf40c317b7dbfb98fc51d63fbf5d9a9cfe9a139a68b0",
+    "upstream/resources/js/services/webauthn/isValidDomain.js": "2e1621b59c28df1ac1c4dfeb6377f2e97ca2ecef7ccceed129b6845cf4f5ae32",
+    "upstream/resources/js/services/webauthn/webauthnAbortService.js": "0c3a175295ceb1d232ac2c7ad77e3f27a06ac10e1c3237c70aab9db401215d0b",
+    "upstream/resources/js/services/webauthn/webauthnService.js": "7c603e313fb9f23d91e8104b621caaa247836b3d0fd199de91baeaf0fb64b30b",
+    "upstream/resources/js/stores/appSettings.js": "aa2b62d8b6f7aa45c82ccf89355c0da4a0b48d0eb0152f9afb3eeaebb0f9d88b",
+    "upstream/resources/js/stores/bus.js": "e8bf603f1a74962254de609d3fe157751453a598fabad2abe829e82fbc93baba",
+    "upstream/resources/js/stores/groups.js": "b1b23d6de7b18f97ed797a544ee52af1e7c74a8cfa2736926ed0dbf45df84f85",
+    "upstream/resources/js/stores/twofaccounts.js": "34c3483967c41950077ef1c918e3070e6cfc98c366d054b85524e5453ab8a10d",
+    "upstream/resources/js/stores/user.js": "596349095011ed5ad28eb2732bb9f6b43f55984b7652dc26c5de4e7ff8c26cac",
+    "upstream/resources/js/views/About.vue": "486d7efc515b26b2586f04ce11bb4758d960e5e0f3bfe913f2656315548cdab6",
+    "upstream/resources/js/views/Error.vue": "5ec55db644d623396d850c38dadc1c26cd5dc6d46dacf4517b9a7985fe0474d9",
+    "upstream/resources/js/views/Start.vue": "8949657ecbaeeb9ae6cdc6a8e12285ce7ff7480dbc291af0a247fba433912567",
+    "upstream/resources/js/views/admin/AppSetup.vue": "e9ffa1b2011d76177ca763acf6161b80e5810807e25ad82d00bdfa411fedc318",
+    "upstream/resources/js/views/admin/Auth.vue": "802e50cae4a5d307c737b7befdf1ed6e90e492381ecabfc6ac83680ab93040bf",
+    "upstream/resources/js/views/admin/Users.vue": "d0efb421d25a02faba03001f8b5fa4fccb21186a4a0021e565520f85f5019b0d",
+    "upstream/resources/js/views/admin/logs/Access.vue": "92e5fae6d26a6b3406966a23ee65009ff5655671df525f08833d965972da0ce0",
+    "upstream/resources/js/views/admin/tabs.js": "aedf33ee1c080d92edf6a82240aa56f8e2f1ebf3fcde3ebcb59c0f4a241e2f8a",
+    "upstream/resources/js/views/admin/users/Create.vue": "f9070ffcf81e668a388ae67b3bd8b69c3fedbb95730a8c668862ba3cf1b871eb",
+    "upstream/resources/js/views/admin/users/Manage.vue": "152b6fbcd6f62a5f02556fac9dd074369619abe571b346ddda8476033e5942d1",
+    "upstream/resources/js/views/auth/Login.vue": "ff765f73829099c8f06df3347c715e033a762c684ebcd5bad575b6703a06038d",
+    "upstream/resources/js/views/auth/Register.vue": "3517dbbd2649465b14a1f6424dd81123c19734c4517a049d00e8bb4376c4f93b",
+    "upstream/resources/js/views/auth/RequestReset.vue": "eaa4e4ff1e453b12309c91aee5402654ba57be379e66b278248a7df8d40584fd",
+    "upstream/resources/js/views/auth/password/Reset.vue": "0e7ea4a84701be16501604a122e0b637d0ea11efaa2b09412ac13523e4d5448c",
+    "upstream/resources/js/views/auth/webauthn/Recover.vue": "1acb67cb74a1cf50ac3b91589949b5318b1cae3c833e697db20b234142ddc63a",
+    "upstream/resources/js/views/groups/CreateUpdate.vue": "e8c8a58cd6a810fe094843788657b66baa2326b25dadb50afe7cbb02200ea691",
+    "upstream/resources/js/views/groups/Groups.vue": "d4fed5f34b09c0c5c43719ffe97a00dbfa837190a05fe0043d8deff49946f84a",
+    "upstream/resources/js/views/settings/Account.vue": "0c62a301f9b6244d61652680e54ef419a32ce68dfe5e9e0ec1f990b8a58e54f6",
+    "upstream/resources/js/views/settings/Credentials/Edit.vue": "604dfdd127662092e4fdf6ea982ad6f8d90998d61fc547a55e30130e90b25ca0",
+    "upstream/resources/js/views/settings/OAuth.vue": "ee72246610aa28e809dbd394c5cafe5b49c46d4fc853625e47a20593428957f4",
+    "upstream/resources/js/views/settings/Options.vue": "ded076f923e98c56a9529f4f00629d373ea798ab75d0d900e12fb6ece970cf84",
+    "upstream/resources/js/views/settings/WebAuthn.vue": "c4b564dfc87ea55559b43a12f5f0162a4167bc614a5664d8d5b331a549c17442",
+    "upstream/resources/js/views/settings/tabs.js": "3ca0e8896a6034558591ff0dc4c33e8a81b6a16ebc84fb4317cd04069b420e31",
+    "upstream/resources/js/views/settings/timezones.js": "136d645f10c8b319de96b51555cc2138d5fbc77df31189d0f8807b9d4ef06675",
+    "upstream/resources/js/views/sharing/AccountSharing.vue": "59c9bb34137c26f28b86e5c441c6ef491d9bbffb3573444472b0d4638b72c3ad",
+    "upstream/resources/js/views/sharing/Share.vue": "5a639237332a3576d80cc21eeab0f0410b0800f6890dfeac61d345456ff588ee",
+    "upstream/resources/js/views/sharing/TransferOwnership.vue": "b51db6b31e644a4ca925ea3599aff978125c5c713c276125e519864124e8452d",
+    "upstream/resources/js/views/twofaccounts/Accounts.vue": "92e0b65f6620ef9106cdacaa8b660e5801ec28fec935def48a629b0d48699b77",
+    "upstream/resources/js/views/twofaccounts/Capture.vue": "eeeaf3ceac63b5f95b2f00c1850a1176f3869ea5f055a614f252810076afe7d6",
+    "upstream/resources/js/views/twofaccounts/CreateUpdate.vue": "477249a97af9f0bc91a1b6791accc139d8916366c6a189e0fd5891efef86e6c5",
+    "upstream/resources/js/views/twofaccounts/Import.vue": "6f2ecc88c2311220ffa828ea7cf9943dce356edfd0d8dba39334ef8f4e8786e4",
+    "upstream/resources/js/views/twofaccounts/OtpLogs.vue": "2dd47e142f79a0ea64440595de2db217617c80f6a6826b771ba2857bc0263ccd",
+    "upstream/resources/js/views/twofaccounts/QRcode.vue": "5dd178a20c15fc5eb4982515a55a41290489334e72f003fab706a685d3ba28d2",
+    "upstream/resources/views/emails/failedLogin.blade.php": "886e49b9b1c818814985e625a1f88fa352d0c0525df73af2292d01cf047b21cb",
+    "upstream/resources/views/emails/signedInWithNewDevice.blade.php": "51384dc1e77fc54402cddd0a71b3ffc0711fe3a90817b280165def9e03150781",
+    "upstream/resources/views/health.blade.php": "ed3abf78c4f172e421e95a08e81060f6c34013474b7d393207e89f1ab229770f",
+    "upstream/resources/views/landing.blade.php": "e42180ecfdc87fbf2b5e4545f3c559acbdedd4a4cc05be01c41823011115888d",
+    "upstream/app/Api/v1/Controllers/FeatureFlagController.php": "df710fbde1897f0536a2fa71f245241eed7b025a44d39c2071252c17874bfedc",
+    "upstream/app/Api/v1/Controllers/GroupController.php": "62d1dced241ad8238f54dc298ecc34c4d72a8afab17029da4e6461ea5ddc446b",
+    "upstream/app/Api/v1/Controllers/IconController.php": "c3cf6d441947df2c6e31958078049a9490634e2f05147a0616403f8764b8c499",
+    "upstream/app/Api/v1/Controllers/QrCodeController.php": "20131d9f277576c39b814c564b01bba122152dcbeea45e1836b3e837ad57c267",
+    "upstream/app/Api/v1/Controllers/SettingController.php": "37a94ba8f59db47e7ac52a76b27e9745858555f3596b8ce379210bf3e23e9d8b",
+    "upstream/app/Api/v1/Controllers/TwoFAccountController.php": "dab6275c7789afe00d16374d0b5ac015912c0564b0029c5416c90c2b849d7c52",
+    "upstream/app/Api/v1/Controllers/TwoFAccountShareController.php": "219027c9333d36322abebf6e181e2015ea98b91a0ea943ed22986811f4ab103b",
+    "upstream/app/Api/v1/Controllers/UserController.php": "694a6055053c2fb47dee405a368e57616dcf6b0e8db51300d7ed38cd4ea1ef6c",
+    "upstream/app/Api/v1/Controllers/UserManagerController.php": "a771693f103a253db4b95e85c03b08692c10794b5947dcc6ebfbd4ddf7df8dd7",
+    "upstream/app/Api/v1/Requests/GroupAssignRequest.php": "239c2acda1b38b552185adead9bdd9a9c93c4d7a6a9e68370f6f720fd7e61e26",
+    "upstream/app/Api/v1/Requests/GroupStoreRequest.php": "40d37e878badb22d65ad8012970f736b8f2dfce076384b495699c93ffc8efe3f",
+    "upstream/app/Api/v1/Requests/IconFetchRequest.php": "2287f35850b2de0153dae9c9d4226274122492855276bf9adc538e9a526db4e8",
+    "upstream/app/Api/v1/Requests/IconStoreRequest.php": "69c9b2ee03c755e8b8e3f4f7a24e56ead358b463ef8ed1eb56215b5bd47f46a5",
+    "upstream/app/Api/v1/Requests/QrCodeDecodeRequest.php": "a2d6cff5c1646f77fe00927e871753f8d41b593a9049f3cda93b0f61a94ed9f7",
+    "upstream/app/Api/v1/Requests/ReorderRequest.php": "484ec4bd58eccb59a940ecf8edd716a346379f8bbe636831c77a1bdcfc5549aa",
+    "upstream/app/Api/v1/Requests/SettingStoreRequest.php": "6e79452358291106570b9ebc02b614630e799d2b115e190ba258b9eccc4489cf",
+    "upstream/app/Api/v1/Requests/SettingUpdateRequest.php": "ba16f4d3be27655bcec56fb1d22a26f59eaa0621d60d3952944f07bee42ed38a",
+    "upstream/app/Api/v1/Requests/TwoFAccountBatchRequest.php": "d649e5d08e12ecdb875169d595d4ede5e080c1f73b69ddb4e3dd9e3964c18603",
+    "upstream/app/Api/v1/Requests/TwoFAccountDynamicRequest.php": "a219b58ffce944dad4cd07a50ce375f4d6dce0fb54b066dd71cdcda98ee87c48",
+    "upstream/app/Api/v1/Requests/TwoFAccountExportRequest.php": "7c82bccf7e45ee0720311e1008824bb523682d1820d3a405e10737e65b14c4fe",
+    "upstream/app/Api/v1/Requests/TwoFAccountImportRequest.php": "c4ad5bcb79a0f20e58b8ca0ddd776088daa343964c85f0ca2f22618cc245b963",
+    "upstream/app/Api/v1/Requests/TwoFAccountIndexRequest.php": "8180307c62935f1bd733b4d046a8a2e428b1ef4add2af0b5c168e3537a2d0c5c",
+    "upstream/app/Api/v1/Requests/TwoFAccountShareStoreRequest.php": "e56d840aa7cfa5a3663f50590d4302b02d54ce5692305fa4c53e3b4a0a206925",
+    "upstream/app/Api/v1/Requests/TwoFAccountStoreRequest.php": "95dffa3574c8ef9c56df2b0d8b59fe133aff81933586a1bd64319cd18ba1f300",
+    "upstream/app/Api/v1/Requests/TwoFAccountTransferOwnershipRequest.php": "c536209d41a03830bbb2b1c0064c663235c95321dc113cd391a96296f305af8f",
+    "upstream/app/Api/v1/Requests/TwoFAccountUpdateRequest.php": "f98c9c9dad930459b0ee8567cd2b155a85eb578f895aef9ccd8f4077b04bad96",
+    "upstream/app/Api/v1/Requests/TwoFAccountUriRequest.php": "d6f3e5ab48b98fe3dcba5525d9445777a6f8e44fe247fac6b410fcaa20b2381b",
+    "upstream/app/Api/v1/Requests/UserManagerPromoteRequest.php": "84282be4ab6fe88ba5f45680238a26a687d42967769dcf8e9360965d2367ebe2",
+    "upstream/app/Api/v1/Requests/UserManagerStoreRequest.php": "a382c4f6cf054a91fa3ea864795e51968c87565768e120572951c5af71f403c4",
+    "upstream/app/Api/v1/Resources/GroupResource.php": "5fdd058b25e82cd784e9e17ebaa453130b7aa91e4ef509082e5eb19650167560",
+    "upstream/app/Api/v1/Resources/OtpLogResource.php": "09d144ac443d8082de9df7e790576ffad72afdd1f41bb2b656b7440372b11746",
+    "upstream/app/Api/v1/Resources/TwoFAccountCollection.php": "200bfcf939a31c3b9bf71ef9303162354a04afb93f81c81a36669afbe78e2d9c",
+    "upstream/app/Api/v1/Resources/TwoFAccountExportCollection.php": "3c7629661ad44b478416d5669d5d91f98811ad5c627cf70161d2ef14850b6b4e",
+    "upstream/app/Api/v1/Resources/TwoFAccountExportResource.php": "bdd8f916dff6917b3c7d1849239e443af4ba35e6c786e986e8e4cddec070bd63",
+    "upstream/app/Api/v1/Resources/TwoFAccountReadResource.php": "6d8a03d13293555424933870f9d263e27487f66a6918136140d8c7126fda1792",
+    "upstream/app/Api/v1/Resources/TwoFAccountStoreResource.php": "202e3ce511a2b3934364a316a8b644e683036a6889d678c4ae244ac1ce9fdf28",
+    "upstream/app/Api/v1/Resources/UserAuthenticationResource.php": "1e17074dc25016ebf1d22a84bcb215df910224a1b34a0b3b4aa395ffe3dba41b",
+    "upstream/app/Api/v1/Resources/UserManagerResource.php": "0f377e78fb2c7a93240f71e92fed593d2132e08f1f74b49028e77ffe0581d315",
+    "upstream/app/Api/v1/Resources/UserResource.php": "7b9a6f906228f047b4aee0a57c604418f33ad49340aa71eecae0c41c954c7f30",
+    "upstream/app/Api/v1/Resources/UserShareRecipientResource.php": "c16803bc40c6846abeed55b21914bfac41c7bb87917aea3350f6b058f19ed325",
+    "upstream/app/Console/Commands/CheckDbConnection.php": "d852dcfffa602db7e8d3479915edb0833443c9a64ff9451be45456da3d884b5b",
+    "upstream/app/Console/Commands/FixPassportKeyPermissions.php": "31b0c4f07db93bdf48a8b3b375aee5ad86258a52d122375f379123960cc43dd5",
+    "upstream/app/Console/Commands/Install.php": "f78fe7c7b417f8c2b14fa9ca8b292b547cdee8d3ecb972fb66f101e06754fa2f",
+    "upstream/app/Console/Commands/Maintenance/FixOrphanAccounts.php": "11732a158087f8fe49d983559df5ee2ec8d6f678e50ec89e2ea12d1ebf30a528",
+    "upstream/app/Console/Commands/Maintenance/FixServiceFieldEncryption.php": "a679bf2f80ac65de5494a5e4c87b3d6061f1ef8ee701839dfcc8ab0c5da8af52",
+    "upstream/app/Console/Commands/Maintenance/FixUnsplittedAccounts.php": "042076b6937c4ea8a0183ae841fef094038b4dfb7fb2290aeea95ff51f1b6981",
+    "upstream/app/Console/Commands/Maintenance/TransposeTwoFAccountGroupAssignments.php": "8f2cf0311683f2c102e86241653a70007bb3be86a1b10c0dee4c099822e2e9c3",
+    "upstream/app/Console/Commands/PurgeAuthLog.php": "25c6e91566d788d628b1f0ae0b001bb6048d8035cf4fa772d01b1a9d5442e1e3",
+    "upstream/app/Console/Commands/PurgeOtpLog.php": "a90b5e2f744fee5a1ec8dfedcfde6c46fa499142fd4d4659b82dc5f311695025",
+    "upstream/app/Console/Commands/ResetDemo.php": "291a185e35554805d48513edaf5168d2623d09ca81d0249f0eff4a7481dded7c",
+    "upstream/app/Console/Commands/ResetTesting.php": "045b8dd9b3cb775a7426ba0db4d26b78a4587b8904f9e521ff317f940136536a",
+    "upstream/app/Console/Commands/Utils/DemoIcons.php": "cbd79b5b7158f8445db51d602b181e18e0f5b1d6cf068f86f03bdea0a50c06c8",
+    "upstream/app/Console/Commands/Utils/ResetTrait.php": "8bf15f0b9f5091654fe91ea299357b51d67a1d5792dea47ad96483baca07340c",
+    "upstream/app/Console/Kernel.php": "e9d45ba2f467540b0c54986a083a45d3ba7a97277cce2dc609d4adcb583b4d62",
+    "upstream/app/Events/GroupDeleted.php": "6b6d1f791714f226b4d7ff64f19012644afc1e599b8053f9081b725279944eac",
+    "upstream/app/Events/OtpGenerated.php": "250472966f6cdb17b0b1e727b402041aebaa6f9f91a941be3dca5ffde6866375",
+    "upstream/app/Events/ScanForNewReleaseCalled.php": "48ddacff776a8904d4c795866ac739b158c4b03a71f5c474f38d97a474d99306",
+    "upstream/app/Events/StoreIconsInDatabaseSettingChanged.php": "a5c5932106e1445ec572a12f9e414deafc3e804546ddac1abffcf10dfbee9e3f",
+    "upstream/app/Events/Traits/HasSharingScopes.php": "876cf5d05a229874d1d24f58900ea0bdfa03d6d750b29b71ad502c47e3c4bf47",
+    "upstream/app/Events/TwoFAccountDeleted.php": "0b2a0d6b36bef36795777e02352154bbafc695f4334e742036f048b9d8394fec",
+    "upstream/app/Events/TwoFAccountOwnershipTransferred.php": "aca4f842384ecce96a9da47c5a40234d0f6edf9f8a3ee5387fbbaccc1206ac01",
+    "upstream/app/Events/TwoFAccountShareRevoked.php": "04d9cb2bf0a3711339c1c179b0c867b9f12675d0bf76236b5468ca50062a7e5f",
+    "upstream/app/Events/TwoFAccountShared.php": "6d3cb3c5fe805a16b8a550c54eaaec6d87089f806df64d983206a3cd17359e0f",
+    "upstream/app/Events/VisitedByProxyUser.php": "8c78aa7163530650170a4a121d771180ecb314f83b363d8932c29e82a8b6bf4a",
+    "upstream/app/Exceptions/DbEncryptionException.php": "a78ffa1c79100aec2c1493863136a4491d1ba4dbbff8e2371ddde7b42e14e804",
+    "upstream/app/Exceptions/EncryptedMigrationException.php": "5a9347acf977efb05674f0928361a69644705d50550755d59431e8f7ebb09a49",
+    "upstream/app/Exceptions/FailedIconStoreDatabaseTogglingException.php": "332db60c0d5f99b6933ff1c9bac0af868d7069f5b964efa0950afdb01478472e",
+    "upstream/app/Exceptions/Handler.php": "d40188d5eb1d4ef7650c9c8f8480dff703b187bb2b7f247e03df5c77c0e3492e",
+    "upstream/app/Exceptions/InvalidMigrationDataException.php": "04fe95b64ab7ee967691dca776cf82b03e6e61d59e78f0ee043f671cd6bd56ea",
+    "upstream/app/Exceptions/InvalidOtpParameterException.php": "45df29b5fe3ef58b75e400d113538a7fa59c8cd8122795519c6a0059799687ea",
+    "upstream/app/Exceptions/InvalidQrCodeException.php": "50c8e18ffcfdd4a8014dfb11e7b8bd529b7ff2f7cbaff0cf1a793277f7badeb1",
+    "upstream/app/Exceptions/InvalidSecretException.php": "0c2632f676b54deaaa78a24547597597946397d28ca5efd870c866b41c77c727",
+    "upstream/app/Exceptions/UndecipherableException.php": "974730ab90ca50cf53ceddb69c4e09427f154fdc23848047c3a94d54098c73e8",
+    "upstream/app/Exceptions/UnsupportedMigrationException.php": "daad03320a6fa41dfbcfbcb6f3433c786555612546b75e46507c21cb0bbc93dc",
+    "upstream/app/Exceptions/UnsupportedOtpTypeException.php": "84fc75c338250bce66439975f302b6f46b17a225f58c3c339e96086f1143f553",
+    "upstream/app/Extensions/RemoteUserProvider.php": "79a065bd094e2bb2eae05e45a9099a08990ccb42ab8da0732fee4cef7cfa6335",
+    "upstream/app/Extensions/WebauthnCredentialBroker.php": "944e856276811444d91b66bfea24b2e98155e167a647d84559e6c6dfd3157cb9",
+    "upstream/app/Extensions/WebauthnTwoFAuthUserProvider.php": "bb8332d3ea9a37ef388ede65265e478789559fce81c6e65f7b1418d7996963fc",
+    "upstream/app/Facades/Groups.php": "d6cf55f1f784b57c88bd39c218340a1900acacb2e116ef5732e0d55ffc103164",
+    "upstream/app/Facades/IconStore.php": "c18fe854de901480c0c51d96ae981ad44394341e5f59d22ade6cd1550cbd9e10",
+    "upstream/app/Facades/Icons.php": "489685aa20a4608a3d29ca76351272100b8c607810951b3e33aed5178be8b8d8",
+    "upstream/app/Facades/LogoLib.php": "332d24691189557123376cdba93647fb78490d6e00fa527e4d07b14be4bcb813",
+    "upstream/app/Facades/QrCode.php": "75a60a96f64fd184489956d8f4e76f0f7aa1f05d153f30bd43cc56e1c24576b0",
+    "upstream/app/Facades/Settings.php": "27a471e2c0238789f51d09567a2997527d5d56b5289798b16fb21f19b80b15f9",
+    "upstream/app/Facades/TwoFAccounts.php": "bef3172f83486ac4ea34cf8d454d58578dc1eb7e38d9ba115c4e15c10669ad6d",
+    "upstream/app/Factories/MigratorFactory.php": "0ff18ad3a483d27eef95c7f113ae9bb6e9daf7f38e56d3b22e1f31179a4dcc47",
+    "upstream/app/Factories/MigratorFactoryInterface.php": "59338f7df0740fec003a1d4e0d320e3b21242815224fcd89d42c3e1e2047f18b",
+    "upstream/app/Helpers/Helpers.php": "d69cbb312d9b0b3a243e7693d9979b050fe31a96b14c43221cb054fcdf4e4d42",
+    "upstream/app/Http/Controllers/Auth/ForgotPasswordController.php": "c974982fe4fd2c82ca6f8158b613146f66c785a3001c9baa229a4a38da2d2cb0",
+    "upstream/app/Http/Controllers/Auth/LoginController.php": "584b3b5d4dab11df6bb853160c5b2cc983262c690d4a3ccef9a5e36c072d0b5b",
+    "upstream/app/Http/Controllers/Auth/PasswordController.php": "eb762e84e38bc10a7b6d93c96d6d819b01c4e333ae449c5d544ecd2608c294d0",
+    "upstream/app/Http/Controllers/Auth/PersonalAccessTokenController.php": "a6eff4691b020f9f0cb82dd87807e4c2ab6bb33890b2149e06cbbadcc3adc85a",
+    "upstream/app/Http/Controllers/Auth/RegisterController.php": "e0510aa6bcef32631601ab3f6b2fc1af085fa6036abca3142d9020e61eec5015",
+    "upstream/app/Http/Controllers/Auth/ResetPasswordController.php": "dc269850b3ae528a87ac60269664773611d99c7f7dcfd9495fb8c15fe9064e30",
+    "upstream/app/Http/Controllers/Auth/SocialiteController.php": "2084441063f03d36f6e8fb8a269d4aa56622fcde60c35db8470428d5f664db23",
+    "upstream/app/Http/Controllers/Auth/Traits/HasAuthenticatedPayload.php": "2a77af4740927f6ebeba4f0baba01595d85bd88e5e2d2725233d0cc78fa378d4",
+    "upstream/app/Http/Controllers/Auth/UserController.php": "46807a8d1d32aac28a276f1861850d4f687418dd3600faf74a7d72a52ef18432",
+    "upstream/app/Http/Controllers/Auth/WebAuthnDeviceLostController.php": "fff2d0b0e565162fba51b4a395d59f6bdbd247a516c7d78c6eb65189f9006664",
+    "upstream/app/Http/Controllers/Auth/WebAuthnLoginController.php": "a54a1ee0562bb8545d5886f5a8dac6b4533abbfaaab132c09d8d0332942d38dc",
+    "upstream/app/Http/Controllers/Auth/WebAuthnManageController.php": "0cc6e888e9208e2fbeff3fcaccc109373d9cd65d156a47a99a24b2023bc5e3dd",
+    "upstream/app/Http/Controllers/Auth/WebAuthnRecoveryController.php": "a65daa9cd9c7fd336f35d847e9dc5263114ce6d8e8ddc46552118f23122364cd",
+    "upstream/app/Http/Controllers/Auth/WebAuthnRegisterController.php": "30f63f6524c181a4b0a8e4d889045676ce701273c2003b26d3fbd638185c4dbe",
+    "upstream/app/Http/Controllers/Controller.php": "663e9f40be59adb09c7acd871da814b78216e79120f10375da0a31a6cef968eb",
+    "upstream/app/Http/Controllers/SinglePageController.php": "1633d5ea685dd5c901e6b4e256a292b914b28f420499cf68298da559b57398c0",
+    "upstream/app/Http/Controllers/SystemController.php": "f6dd49eb51f785c256d6112f79a79f74300505e3cace6060f089909e726a92b2",
+    "upstream/app/Http/Kernel.php": "002f4c40ac1bad827d5ee8355598ab032d33ab173521e784fcc506bcced1495c",
+    "upstream/app/Http/Middleware/AddContentSecurityPolicyHeaders.php": "42866a0a69f8081700d572e60f8e3769103156d149730326ebaaba0a8dac6937",
+    "upstream/app/Http/Middleware/AdminOnly.php": "5204819f5eb14dea9a306481af6d23831ef803c4be931371655f4e96b3b37a3b",
+    "upstream/app/Http/Middleware/Authenticate.php": "7e3103b937a70ff96b0666bf613aeb0d6b5ba05baa4c6b7c7e16b459ce5822d1",
+    "upstream/app/Http/Middleware/CustomCreateFreshApiToken.php": "bafbe1b5b2c5ef9c3e14388383d20e01c6d045bd69d1ab9d7f104df54bbb7fa0",
+    "upstream/app/Http/Middleware/EncryptCookies.php": "958e86e38afd4321b443b8c4aaef17fc956bbac93410d54af2f74213c52e9b87",
+    "upstream/app/Http/Middleware/ForceJsonResponse.php": "ad0c0a1d2107944e7aadd5c662a43245cf3fc1df1154b4b113f4bd7afedae8cf",
+    "upstream/app/Http/Middleware/ForceLogout.php": "171613df2bd064fa7033e89292399df03877cd9e4134dde8ff45c49e5f2d3fbf",
+    "upstream/app/Http/Middleware/KickOutInactiveUser.php": "c92103305c467b148d0f1cc00df2b418ea94de415fe803ed0419121fb7871c07",
+    "upstream/app/Http/Middleware/LogUserLastSeen.php": "0ed03d408eb28d01e5f0c4924bab47a5cee1e128a9c5047f7053f407bc38c121",
+    "upstream/app/Http/Middleware/PreventRequestForgery.php": "6c04b4871d18313a49befc2540ac13716204c533a94994962ee7b96c7b39039c",
+    "upstream/app/Http/Middleware/PreventRequestsDuringMaintenance.php": "63a907517beed52be7dad5dbda73e9ecd504b1cece86a80c007526998e146974",
+    "upstream/app/Http/Middleware/RejectIfAllUsersSharingScopeDisabled.php": "9e069043a353d464ada787364b07b324c2b6f35c44e79d794400fdf19881fdb3",
+    "upstream/app/Http/Middleware/RejectIfAuthenticated.php": "67198d8f175571bfec893a94b344e1edfa745cab18e3506628386eca8afc8c9e",
+    "upstream/app/Http/Middleware/RejectIfDemoMode.php": "5149a21fcad59263535126a220bbdbd780e1192222b21368b84977e06ba27b4c",
+    "upstream/app/Http/Middleware/RejectIfReverseProxy.php": "0e9d17fa787f6b5935ae700ac033ad48295a6f49d099ae33009d1a6dc95533c2",
+    "upstream/app/Http/Middleware/RejectIfShareDisabled.php": "acce9772f93099b1c36e01c81a5570e3b7faa85f569580dc1edaf8a0e2bb5a9f",
+    "upstream/app/Http/Middleware/RejectIfSsoOnlyAndNotForAdmin.php": "9286997d3ec567897c80d6bf1ce81d880cec95c5074fb905537d6b0029005733",
+    "upstream/app/Http/Middleware/SetLanguage.php": "265f894aff447eedf4358eb8e8daaaa18baf4e520f81e48a8b390cedf1298b90",
+    "upstream/app/Http/Middleware/TrimStrings.php": "107bf2dc8b970b2956548ab63221b350587f1fb94792f786f047723da5e2c615",
+    "upstream/app/Http/Middleware/TrustHosts.php": "04b99b50e49e4990e85b72c8b3dc1f71f87cb480088ffccf1947691aec22941c",
+    "upstream/app/Http/Middleware/TrustProxies.php": "2d7ad50cf9b3dc36c941308c603a4eb664d9041b39ba8fc2647197305036e872",
+    "upstream/app/Http/Middleware/ValidateSignature.php": "b63174bf5ac6fbb47dc97cc29e243d68500c27fa1845961a789df1587b8a35d4",
+    "upstream/app/Http/Requests/LoginRequest.php": "459de557ceffbaebb304a036045bd68dfc4690371c81d216965aa6ff88413e3e",
+    "upstream/app/Http/Requests/UserDeleteRequest.php": "adbd2e4a91220d38bfdeb36bcaf1e9faa8fdfb95aa1542dfa94c4e73da9b1bd4",
+    "upstream/app/Http/Requests/UserPatchPwdRequest.php": "313275320a3b7469020be13985a3d170c824b17648fbd401646cdcfae03d75b0",
+    "upstream/app/Http/Requests/UserStoreRequest.php": "c97f3cf88e010b7a78908a999e462a313caecfbdf2639c4124ecc9e8fdd14d16",
+    "upstream/app/Http/Requests/UserUpdateRequest.php": "f546ce3cfa2d6df2728851645ba4b35265f1c3319fc90a9f9e48abb8df19b5fe",
+    "upstream/app/Http/Requests/WebauthnAssertedRequest.php": "cab1320e5d8388bbf6dd36e83d5a820dcf35ba4ea1caf8d703f479538e75a321",
+    "upstream/app/Http/Requests/WebauthnAttestationRequest.php": "dba6d1141e5e447451bd5a94e4fd0d0418880c59070772f710d9ce5e6d51f580",
+    "upstream/app/Http/Requests/WebauthnAttestedRequest.php": "940eea091f385c77d076d6ac3df081e74de9fc734f2dd5537b98631bd17d00ca",
+    "upstream/app/Http/Requests/WebauthnDeviceLostRequest.php": "54666474f6a895ef68bc9a003e34604632f6257dd6a849f7e2c7c7e6fc6a31ce",
+    "upstream/app/Http/Requests/WebauthnRecoveryRequest.php": "7aab998cd13540470253b2c718f5daf4959ca1c61abee165a1e7d05c3e1b2cff",
+    "upstream/app/Http/Requests/WebauthnRenameRequest.php": "b3d7b5f631b9dea349b7a5c3f3b59d1688db824a0c6a2f3c87c1921cbd40a59e",
+    "upstream/app/Listeners/Authentication/AbstractAccessListener.php": "d3e5197bea4c04e03c743e52facd7cb1b6e5f0fedb367a44457a524079271b0f",
+    "upstream/app/Listeners/Authentication/FailedLoginListener.php": "c14cf10424be6b25cefbf22ade507972ec9b50727dcd6a95396ec53b9aaddb0b",
+    "upstream/app/Listeners/Authentication/LoginListener.php": "4d51904aa4c1a550a5b8cc9fc0447051cc05a0f8b300971bac91eee678892d3d",
+    "upstream/app/Listeners/Authentication/LogoutListener.php": "b002459ac79b947e821ea63c02a636b87e3b8e68a2e1681273f2694ea67f1ce6",
+    "upstream/app/Listeners/Authentication/OtherDeviceLogoutListener.php": "d559fddc29dd7e278d10bb0dcfb253108c96c8c65fd691f0d2bcf4ed6d593334",
+    "upstream/app/Listeners/Authentication/VisitedByProxyUserListener.php": "964e3241b686d583706db79047d24750f0f5a2cfe3c0db289fd523b3f8d3f95f",
+    "upstream/app/Listeners/CleanIconStorage.php": "e02c4fe1906f8c6e36f61209d612e609d80f34ba5c86f7a1b084318d93327917",
+    "upstream/app/Listeners/DeleteRevokedTwoFAccountUserOrders.php": "2572ee632210007b8758ca4094c416099b1b7027e6e08dcc550877f1eb0111c9",
+    "upstream/app/Listeners/DeleteTwoFAccountOtpLogs.php": "2a28108d36a8eb2967440bacda12b46f5a566b163ba51ddd81ecad4df84669dc",
+    "upstream/app/Listeners/DeleteTwoFAccountUserOrders.php": "daf56e161d7bc2f55bd5195400b359090909c366518ed7d316f29cfda2d5142d",
+    "upstream/app/Listeners/DissociateTwofaccountFromGroup.php": "3facaee53618f5716573254e0038c845e558f7e28ccb70cb461ce3518d2efabd",
+    "upstream/app/Listeners/LogNotificationListener.php": "9834e85aaa2c28f0d7835075108943683ffe3f860fdbabe92990ee27b48dd4c2",
+    "upstream/app/Listeners/LogOtpGeneration.php": "5fed60f27f12d4616ab1551ff1400afb98f154f959faf2899154a775274cbcab",
+    "upstream/app/Listeners/PruneTwoFAccountUserOrdersAfterOwnershipTransfer.php": "535a211cd2ac13d835b99bebfca85560c29c1ce00117a0ad5d933c8b684d0017",
+    "upstream/app/Listeners/RegisterOpenId.php": "e260cab227c238be2419482c5294fdf1b0c8e20cf333634bbf535d52694cc33d",
+    "upstream/app/Listeners/ReleaseRadar.php": "c2429f9e7ffde9b1acc8ed24ec8f1907878ac75702d0af80e58707bcc842b101",
+    "upstream/app/Listeners/ResetUsersPreference.php": "2041735905b62f952a4a7e6639d1f84097cdcf0928e54f1d3d50428ed83134b1",
+    "upstream/app/Listeners/SendTwoFAccountOwnershipTransferredNotification.php": "5b501661da73383c0f46c9626f1a1cb7b691f2d69b91f5a8d9c480acfa1ecc62",
+    "upstream/app/Listeners/SendTwoFAccountShareRevokedNotification.php": "948fbd7f7ba842d5ab29c64411804ada0b1bd791b164fa0bc4467f4ed546f27a",
+    "upstream/app/Listeners/SendTwoFAccountSharedNotification.php": "d1541f7970ac7ece692789c8ff70cf0817b0978051a0add35154df69aac22657",
+    "upstream/app/Listeners/ToggleIconReplicationToDatabase.php": "8aebc3b5771b1aa8e0458e099c48b41adf6444fcc0de4cc4f2867f2dfff92e50",
+    "upstream/app/Listeners/Traits/HasLocalizedNotification.php": "446e5987052b1b6987c63bc0c379b9f53c3d8fd73c0477b1d1ccdf7a13451959",
+    "upstream/app/Listeners/Traits/HasRequestIp.php": "fdcfd18002b32f932d5c918d606b7a7c43117675b85eb89385f739de197881bd",
+    "upstream/app/Models/AuthLog.php": "bbb0772d40fed7603b0ee30145e338a32813bfdbcab347881d64f27a2b02660e",
+    "upstream/app/Models/Dto/HotpDto.php": "f399223704ef4d1e9ac2ad7a250e152fbd427678ef9a13bde8daf7693f92b019",
+    "upstream/app/Models/Dto/OtpDto.php": "b0de1ef68cb9e94aeb32eda55f20fcfe71e1965bb3ec4944737422a76f6f1136",
+    "upstream/app/Models/Dto/TotpDto.php": "621188f2616df74406e06447e0dc44d2ce15207739f579769dd7fc53009dd291",
+    "upstream/app/Models/Group.php": "e4726dbae88240c808bdfd6af4b65626c3df0e461584e544673b427cadab9789",
+    "upstream/app/Models/Icon.php": "5fede56c31db707d570084446b33e9694e340a4dbb45b15d9e89edb3aba31468",
+    "upstream/app/Models/Option.php": "bf78b003157313fc3c8fc76abbfad929ddc301c43789253a13ffca7254a32d27",
+    "upstream/app/Models/OtpLog.php": "d9b7ecec6117e766ee0d227e00102ac35ffe8769fb0470209716b47526b30314",
+    "upstream/app/Models/Traits/CanEncryptField.php": "c9b837d893119572f492f86c7f0e303550fa365dfb74e33bc83bc947a28e842f",
+    "upstream/app/Models/Traits/HasAuthenticationLog.php": "09595757a22b62f85fbdd6c8c7f092c53666d14f4039b064d6d66aed1438b50b",
+    "upstream/app/Models/Traits/WebAuthnManageCredentials.php": "295254a5fb0ccd8b32f1bdda53cf2e685e382fb9fe7b992eb5ce3230bc520021",
+    "upstream/app/Models/TwoFAccount.php": "4d997c8de886b5f5d320f0e7263f70ddab670271862b0f9730bb4436fab78320",
+    "upstream/app/Models/TwoFAccountGroupAssignment.php": "57e06ceba17cd9fa2cffeff67c6e2cb0a7cd89df908e2cc18cdc9e236272e60b",
+    "upstream/app/Models/TwoFAccountShare.php": "fce53cc505ee1a9517ee50c495ee60e324480bbade36447c8a66c3b70d094bc4",
+    "upstream/app/Models/TwoFAccountUserOrder.php": "b85ed9ca43c5299451d0104b7d81e74df2f1ea4710fc194bb6001d4032eb0fdc",
+    "upstream/app/Models/User.php": "6e0b65ac90347f9dd7ab9dc1472ad7371b467dee7e5a70566cb375042e9ceb56",
+    "upstream/app/Models/WebAuthnAuthenticatable.php": "4357d8e371c12981d0b0c5166b0c15535711e677ea5d5c9ae87a5736638d9df9",
+    "upstream/app/Notifications/FailedLoginNotification.php": "f2a637dafabf7510ada64225149f04e5afa023b5207eb938e4c094d48a4d15c6",
+    "upstream/app/Notifications/ResetPassword.php": "fbd74a8b74620089c5c8afed8d077e08d9a0cce95cb86ab5f07fd2673f5cb65d",
+    "upstream/app/Notifications/SignedInWithNewDeviceNotification.php": "871a83d8f8cd7a3bace603acd8daef821113ee5ec45a582524b41bca434a7d34",
+    "upstream/app/Notifications/TestEmailSettingNotification.php": "1b751cb8b55dd5db17c6e54adb48676b429f31d3f532b67717d66b2a68364a09",
+    "upstream/app/Notifications/Traits/RendersTwoFAccount.php": "4c6c0f26d99d4c4635edd576ca55d8dea932d4a9597045c5039eb004fe3b17a3",
+    "upstream/app/Notifications/TwoFAccountOwnershipTransferredNotification.php": "d8166ca5eb05eb9e058525ea938a1a09169a59f95661bad65f8a773bc8ae883b",
+    "upstream/app/Notifications/TwoFAccountShareRevokedNotification.php": "60cedc4fdf4b6b50adf3dff8637fe68f4d03479d57c1795f909d249b0b8d5e29",
+    "upstream/app/Notifications/TwoFAccountSharedNotification.php": "5f0c58b99be4d385d5870f0c91cd3830cdecb612633e90333d48d55f029b4629",
+    "upstream/app/Notifications/WebauthnRecoveryNotification.php": "a8fc15db7f98901693668cadc75f2a11bf8a42a7f39e4b145a548f70fe1aad8b",
+    "upstream/app/Observers/UserObserver.php": "0917075b00a4b1e8d65c6b4f561747d996f1bf1a0194ddb4de71d2d2658403bf",
+    "upstream/app/Policies/GroupPolicy.php": "043caa25e357d61d8afd7e56048b7bcbd0990cb1eb64584d90910e21ef3e9e83",
+    "upstream/app/Policies/OwnershipTrait.php": "0f094974ab4ef12614a0f254815962a6bb35ca3571444d865cc7f8c8ec50bf5d",
+    "upstream/app/Policies/SelfTrait.php": "d3698b57bc5e065abc5b7ffc34723aa0d6382aafa88868bf0f7796178b9e06e4",
+    "upstream/app/Policies/TwoFAccountPolicy.php": "8e55aee3a26a4218cfbdd71e17120110269ade0d4507711b6ab6c9153de8ff07",
+    "upstream/app/Policies/UserPolicy.php": "692a85e6333dedf2cc1b521b8929aa035042c1023546ed4aadb027948fe72e5a",
+    "upstream/app/Protobuf/GAuthValueMapping.php": "3417de5c719f9b4f34f09fe0d01fee457aace517ad4652c2938f4fe67e165094",
+    "upstream/app/Protobuf/GPBMetadata/GoogleAuth.php": "acce5a7a02871ce1b7a8dd487923ea5f3422a2532a593bbad8c196faeabe42e0",
+    "upstream/app/Protobuf/GoogleAuth/Payload/Algorithm.php": "f4415676c7da6ec896d89968d25787a709e00a301edb86eaec60de8a6ad18e90",
+    "upstream/app/Protobuf/GoogleAuth/Payload/DigitCount.php": "10c7c00bb29ac78c56d4d1ac2e77732daa7eeff4d8af08cbfc43874ee329b29a",
+    "upstream/app/Protobuf/GoogleAuth/Payload/OtpParameters.php": "4eea13f32b84bb191f5486ae1bf3679cc35618e1b1eb2bf0d8dc4f6942b9cd06",
+    "upstream/app/Protobuf/GoogleAuth/Payload/OtpType.php": "9b39316ffd495abfe39bc1557f6cd961902522a7d742c5b05098709640bcc062",
+    "upstream/app/Protobuf/GoogleAuth/Payload.php": "483f802d6eb7d6adb7595c27bb8c7e4ef7daa0561be741661788715a59db93f9",
+    "upstream/app/Protobuf/GoogleAuth/Payload_Algorithm.php": "4b2c8e241fcb598766ea054d589da9eb5a3b8b5db31530173f2161cab2f2b944",
+    "upstream/app/Protobuf/GoogleAuth/Payload_DigitCount.php": "4a79796e9c718dffc0bed8e5d2feb33cf69210cb8126aaaefbaaf1adb155146c",
+    "upstream/app/Protobuf/GoogleAuth/Payload_OtpParameters.php": "500dc28c059aae35ae7aa831d45347ca192be14554c777397e2952a727554b38",
+    "upstream/app/Protobuf/GoogleAuth/Payload_OtpType.php": "22d4d3ad561cdddb886e01c81de32b0b96faa58b5e0df0bad650e2866555a1fc",
+    "upstream/app/Providers/AppServiceProvider.php": "6bc1d0e90ca9c3876caed51be7ffa6f68d05f03eba7c2e50fa58e0d2994abfcb",
+    "upstream/app/Providers/AuthServiceProvider.php": "31e5c23d63e32bba069f4f2d819b5dc15e72b31f55d16996fd31627451e773ff",
+    "upstream/app/Providers/BroadcastServiceProvider.php": "a22f331b20986648486d9c11b705a7f403ffe0dace1a20d692976c7f3e7e64e7",
+    "upstream/app/Providers/EventServiceProvider.php": "0492fef7428c81af6786abeab2d031b4d795257d4198bbb6e49af601b3b8f0cb",
+    "upstream/app/Providers/MigrationServiceProvider.php": "8f97a83a820427fe2ace420d068f45ff2ef2c3b51ae50e47f9622c0a33d388af",
+    "upstream/app/Providers/RouteServiceProvider.php": "66ec3af7001b191fb36e686bf2ab3de8797d6c47b32047270b2446dc463fd899",
+    "upstream/app/Providers/Socialite/OpenId.php": "bd6da375acf51ba66f9c07674996341b92517f183ef7b5a81825764389f6f896",
+    "upstream/app/Providers/TwoFAuthServiceProvider.php": "4edba6b12af3b1310fda0750a4e9b150f2f8471d9c3d6d1073b301673e1006f7",
+    "upstream/app/Rules/CaseInsensitiveEmailExists.php": "5357f29d864e94731bcd55ba39aef48e431b06ce6b483c73b4089c732774074f",
+    "upstream/app/Rules/ComplyWithEmailRestrictionPolicy.php": "de721835ae483785920c65573dd1eb642ea8e957ba4f2dd10f2b102839577009",
+    "upstream/app/Rules/IconPackExists.php": "5c0581c0725b1d75cf3655f64fa5ddebfdbcf2026d9f95c274354c09514ad09a",
+    "upstream/app/Rules/IsBase32Encoded.php": "9a2d7cb578fc29bca00743ac91eb0f15b5da07ee471a1f9c9ef6599c45a3de3f",
+    "upstream/app/Rules/IsValidEmailList.php": "8687b998e97ee26603a53c44484f3b947731dbe3f0f2a6f503259c8f9c575356",
+    "upstream/app/Rules/IsValidRegex.php": "fc716aa8f1b1d1e58f207a4d724996d32495e65f6de83ee850a7e6ba09b791f5",
+    "upstream/app/Services/Auth/PassportTokenRepository.php": "46d0a32e03b89a5110800b30e32ec52e5e1f1c910e3220aa3387e10ec0425480",
+    "upstream/app/Services/Auth/ReverseProxyGuard.php": "e2a667a35f2dbf10601c5c9315b740fd6401fa8bdcbdd235ec76422fa36c363d",
+    "upstream/app/Services/GroupService.php": "70daafda7a5a936737a29bc649d98427b6d35765ffecfbb7bd863ccbdadbf08a",
+    "upstream/app/Services/IconService.php": "72cb99c7d25c3810b2edad81935e885f5898aff2c7a422ab0e83d54fd481ee85",
+    "upstream/app/Services/IconStoreService.php": "2563fa51b0d1bf329684316b8df9be5bd4556f51b09f91b3aecb3edfc7212551",
+    "upstream/app/Services/LogoLib/AbstractLogoLib.php": "6faafd2a095746cdade05011430e978bb22b6626739ff468d11dcddd07e48644",
+    "upstream/app/Services/LogoLib/DashboardiconsLogoLib.php": "bcd8f69664d16d9ccd99b1c4e12a81849dacfb7ea7ec0c2572e07998b18fc78e",
+    "upstream/app/Services/LogoLib/LogoLibInterface.php": "768f1b2bad18fd139cd69e3e262b187d6440a658215df7f89c9af8574501db1b",
+    "upstream/app/Services/LogoLib/LogoLibManager.php": "5b30fe024fda309d57e823aff29040cff763fba2cc3c35dee3aa085bfefa2424",
+    "upstream/app/Services/LogoLib/SelfhLogoLib.php": "3d2a585ee1d3463e619e29d8f91dd7700a7da97a26459a19c82857add5715c7c",
+    "upstream/app/Services/LogoLib/StorageLogoLib.php": "9f0418ba9c82f90fa873908461a7504baee07d13580706e89e217fde547b4077",
+    "upstream/app/Services/LogoLib/TfaLogoLib.php": "0353a3d203edadfb65a5dbd5906bbbd00fb23157b4b37d920832d9c96a17840b",
+    "upstream/app/Services/Migrators/AegisMigrator.php": "f24868693e002c09f8780446cd49a5cacf011138d1732b2d475eaa90f491317f",
+    "upstream/app/Services/Migrators/BitwardenMigrator.php": "3eaadccc6e0330b5a3f4f762c4fd6053baf6230589648fdd595cb79f957cce66",
+    "upstream/app/Services/Migrators/GoogleAuthMigrator.php": "621860568dd2a0c5666fe620db251ceb3ddc0dff385f7eafbecb3e18d80baed3",
+    "upstream/app/Services/Migrators/Migrator.php": "c68590d4f4a244f7f0da5d5d838d5638e8aa9152bb7948647b47591c1975af45",
+    "upstream/app/Services/Migrators/PlainTextMigrator.php": "e5e97963b618c3ead014857e370110892b15f6c3a1404972e6cfd53b8bdef0f9",
+    "upstream/app/Services/Migrators/TwoFASMigrator.php": "e9667a46d927eb9d23e7587231c4d5f32f9a696c4def7f4eed0409a8aefaaa00",
+    "upstream/app/Services/Migrators/TwoFAuthMigrator.php": "29f9bb083796ae36fac583456161be8056cb76e59de6e129673e8facb313c657",
+    "upstream/app/Services/QrCodeService.php": "bf3ae538aa528a6023835bb6352d74ebff2be8b84086cc5f9ebc9621462940c7",
+    "upstream/app/Services/ReleaseRadarService.php": "9ab7d947c48d1d41769ca52fea6073f17d5b99cfcefb20da2ebfaeaac834db76",
+    "upstream/app/Services/SettingService.php": "10cddb4ac0813f8c20891408a6f36fa5e2ddafda19bb6cd58e0c98fab46d8a0e",
+    "upstream/app/Services/Traits/ValidatesUrls.php": "eb2172dee55903753422ffe98fe1b0c0794e6bd669d3b80743c1fd722f5bf50b",
+    "upstream/app/Services/TwoFAccountService.php": "d8a37a223c7a3d1f4be6a112e1b1f11b9e30e1bf2cf071a8e51fcc204dba65ed",
+    "upstream/app/Services/TwoFAccountShareService.php": "269a5c1a248cc3e686b46f8c72b219ffe4b784066e715be9581b788c669fdeb6",
+    "components/packages/formcontrols/histoire.d.ts": "8180249aeaff5ba3c72fb8497279401ae6967e467d5f01fbce29e3c0f740b41a",
+    "components/packages/formcontrols/src/FormButtons/FormButtons.story.vue": "9a982499144dec11dee8537f3b2fdccd936f597744e63975409eeb98347103f4",
+    "components/packages/formcontrols/src/FormButtons/FormButtons.vue": "030030bbccb517eb689d86f043bb99b6464db0a104d148aa4e7d735a3dc88e96",
+    "components/packages/formcontrols/src/FormButtons/index.js": "19d5755caba24e5d511f31eae56e8ac980b0397c7f33e39b1b7f0b8edd8279ac",
+    "components/packages/formcontrols/src/FormCheckbox/FormCheckbox.story.vue": "e5d60c84357945fd44de49c17e101d054a9ad163ec00d335dc60d26630eed55b",
+    "components/packages/formcontrols/src/FormCheckbox/FormCheckbox.vue": "b51168c4b9cbcf3a96c18f09f532c779f1f95ae39bed4ddd79006f8e493b30be",
+    "components/packages/formcontrols/src/FormCheckbox/index.js": "50a1ca9d4612b1e8e62f6939598354a6285c463d1bbf2d176047a10519f83988",
+    "components/packages/formcontrols/src/FormField/FormField.story.vue": "5f52c2c932d58070f648a140c76779d2523b97a0672b300cadb62791ecf7cb04",
+    "components/packages/formcontrols/src/FormField/FormField.vue": "792b1378f0eb08192ad2c0c02058b38a801804902da348a610ea71ab8ffa73b1",
+    "components/packages/formcontrols/src/FormField/index.js": "83bc98f2e69f42ae36249ad3f384b1a8ee9461cf6d2ed0b701539ebd5a832489",
+    "components/packages/formcontrols/src/FormFieldError/FormFieldError.vue": "5f40f2401a4365a985b3d72e1bb85a1c8560414e2b95bc1f75806e0645032e74",
+    "components/packages/formcontrols/src/FormFieldError/index.js": "887ebb38d4609cb192fbb905d7afc5d8aa6be1d4cf9f647cdd442035881d5f2c",
+    "components/packages/formcontrols/src/FormPasswordField/FormPasswordField.story.vue": "f4b009f304a8cdb0f84d523ec7dc38770e347e4bfa084b6ebc662d967ba9b81e",
+    "components/packages/formcontrols/src/FormPasswordField/FormPasswordField.vue": "1f97e1d1e154b8ad19a8d2823be67c72447589b0c9c748477e5048c46dec0239",
+    "components/packages/formcontrols/src/FormPasswordField/index.js": "1b20fd3ebee1ce57f87599af9d353db0154f75d61d8a83c43654fe1e8dd1c92e",
+    "components/packages/formcontrols/src/FormProtectedField/FormProtectedField.story.vue": "0c652f53c41b2882d85060927dff7f9ccc6d11077a0ba1fe4d92b2fceb9f210a",
+    "components/packages/formcontrols/src/FormProtectedField/FormProtectedField.vue": "d8ebf93343021e9298a655787e50086211a0b9a5c0f060ef7a5160ff74017cb2",
+    "components/packages/formcontrols/src/FormProtectedField/index.js": "c3bde3c6291e8f3bab658963f9b80cebfd06855f4a507e2b364e792a12e9d08b",
+    "components/packages/formcontrols/src/FormSelect/FormSelect.story.vue": "e4eb2c3985989145a53d1b5d0886b1711573404367afce8b50db654b7edb405b",
+    "components/packages/formcontrols/src/FormSelect/FormSelect.vue": "6898337a576aee548bf5c40ff4bcd1b95ba0c5d4761ebbe3b1f541911f0d7a68",
+    "components/packages/formcontrols/src/FormSelect/index.js": "92aa4cef1e4e98da3aa45b361a12f67540b847512ab8b60906f06ef792e971bd",
+    "components/packages/formcontrols/src/FormTextarea/FormTextarea.story.vue": "f145b1df582e40f339be43751eafa4b2389f5493daae560c37348414ffb914ce",
+    "components/packages/formcontrols/src/FormTextarea/FormTextarea.vue": "fbac110df690ba9b82a029bc8d46c73e5c73d1ef6da87e3b452365048c53aba0",
+    "components/packages/formcontrols/src/FormTextarea/index.js": "33ce562b3e537760fb75e82b0205c5be22a43383c3b65c54a4010acdc9989282",
+    "components/packages/formcontrols/src/FormToggle/FormToggle.story.vue": "b8088ce198d9729e7cae10e30ceebc7164cafc96f2a92a954c45a5b6b6ba97b1",
+    "components/packages/formcontrols/src/FormToggle/FormToggle.vue": "996f7f12c9dcf81090b873b255a3eff6f273804a14b77b4a84c7f8711fc603d1",
+    "components/packages/formcontrols/src/FormToggle/index.js": "389a35098fb9f883a7c40c4ca2500b86154bfbcee1d383b2adbd08b1e89c654b",
+    "components/packages/formcontrols/src/NavigationButton/NavigationButton.story.vue": "42e34ddc80c0365eb688bdd8663e4251feaf83e064def87dba76852317aa8572",
+    "components/packages/formcontrols/src/NavigationButton/NavigationButton.vue": "e7996dc8a7b1368c8a59483e33d3536a2f5337fb17a3cfefbf855337c3b4eeea",
+    "components/packages/formcontrols/src/NavigationButton/index.js": "eeea0ad1fd48c6e772c30cd8708b32e56e726a073b8a0c5bfe0cf32fb470255c",
+    "components/packages/formcontrols/src/VueButton/VueButton.story.vue": "0310039a62c231718c4fdedf656edb7ff3b3e0a6ec60c11126da266534107350",
+    "components/packages/formcontrols/src/VueButton/VueButton.test.js": "c1789cced0b3af0b4fa8ee0319763f2d2f75707c99d4d4b1f5a4400421c320e2",
+    "components/packages/formcontrols/src/VueButton/VueButton.vue": "be7d2182fbb3fc5813f453c052f94f375838eea400b1445af4b7699e86643be9",
+    "components/packages/formcontrols/src/VueButton/index.js": "156367a1b12feb906444d11390bd16443db986aabd971f75271b74d174888003",
+    "components/packages/formcontrols/src/helpers.js": "658df84f873f707ff0de328b4ce4d4f6865b4b43ec8d45cd2eea2a6c772df34a",
+    "components/packages/formcontrols/src/index.js": "521f0bc697dfc406b51a2986122a91290fa17438cfa8953690e06a3d0af209e3",
+    "components/packages/formcontrols/vite.config.ts": "98a6524779a64c9d019b0dca211246652f6c7857b572fa4259ce7cce9cc0b1e0",
+    "components/packages/stores/src/ErrorHandler/errorHandler.js": "a83ffa94a2b623e094931354314e70954f7d41e32d7c225f3cbced941a8d2ae9",
+    "components/packages/stores/src/ErrorHandler/index.js": "63a5b105626ea338d8b549328c56378a28fd4315844df82d6ef87e2640187a45",
+    "components/packages/stores/src/index.js": "8475379f34f10dd3c8702c460fa3965e61960b91fcbdc5d7cf36a3886b92e8fc",
+    "components/packages/stores/vite.config.ts": "fd5ea33b0253eab6db197547e4ceaf33385bd38df793589ef0acced695816e74",
+    "components/packages/ui/histoire.d.ts": "8180249aeaff5ba3c72fb8497279401ae6967e467d5f01fbce29e3c0f740b41a",
+    "components/packages/ui/src/Dots/Dots.story.vue": "a2453f2e3a9184525db5220fdeb99d32a8033a76755b4aa1784d75d57694c5d1",
+    "components/packages/ui/src/Dots/Dots.vue": "d16502172d99866faca08315142f3e616922dcf369675caad8d4964e6fb714ef",
+    "components/packages/ui/src/Dots/index.js": "1b4fe47570f9c528cce73d62039b7de5b13ad46adce90bd962fe03661930e17d",
+    "components/packages/ui/src/DotsController/DotsController.story.vue": "e19f05717104d99e0491519b57d23c313cacac9fa9efc2d23bc8722c07b87ab1",
+    "components/packages/ui/src/DotsController/DotsController.vue": "0e35faf53d520ed598373a4a55f63c5a401ad7c186b22cdd8f7acf85883ec58b",
+    "components/packages/ui/src/DotsController/index.js": "2c80c550e26a066ccee62e892a7548475c7e13be318dc0459b80fc44ef1f9f8a",
+    "components/packages/ui/src/FormWrapper/FormWrapper.story.vue": "aa757d3f696aa5d816930475c9d856b2a29936e92c7f664b2fe66dcab529aeff",
+    "components/packages/ui/src/FormWrapper/FormWrapper.vue": "55d6472af277ab0429c943a2a1c76aed384edf12ea9d97b7bc77363518b631ca",
+    "components/packages/ui/src/FormWrapper/index.js": "5b2233a40ef0c15628f5aea84e887ad9281d08affd7ab13086336fae9bdc9036",
+    "components/packages/ui/src/GroupCallToSwitch/GroupCallToSwitch.vue": "353401132848b1916c66d5c88b3d9a8a35731dbe30a7411727295c6846d9f326",
+    "components/packages/ui/src/GroupCallToSwitch/index.js": "654521c54f55bb9d90e3d087f57e0d6c1520ea6d3a88e010b5e9de529d811ccc",
+    "components/packages/ui/src/GroupChips/GroupChips.vue": "bc3967f00cda77e43f2bc4c227431d9f9af3fb363dc62641f4695cb1707d6e21",
+    "components/packages/ui/src/GroupChips/index.js": "bfdf45ec584f9ce218f84e983c3eea806fb821d64b74c7c9826e878ac3dd16ee",
+    "components/packages/ui/src/GroupSwitch/GroupSwitch.story.vue": "30b8830b5e49f93cc202618198fb126f456e5dd58eeb25227f3a1727842f9abf",
+    "components/packages/ui/src/GroupSwitch/GroupSwitch.vue": "b523f37c95b29688d887740b5c9109a6d3d75911ad3534076adb17224c72695f",
+    "components/packages/ui/src/GroupSwitch/index.js": "35ba13795011683da2a4a5ddac2e0918ccb0a12699ecdb8e393884d7382ef7be",
+    "components/packages/ui/src/Kicker/Kicker.vue": "c34a04f7fc2a12bc487dd8cfda3dca3f809ae11741658baac900092cf23e0a14",
+    "components/packages/ui/src/Kicker/index.js": "3fc8b9cc5ffc7eff64ba90a5bb8997122f08c4697ef1d25ae50d5f1b1917e3ce",
+    "components/packages/ui/src/LucideGenericIcon/LucideGenericIcon.vue": "586388807ef765e177c7dd8ee5d5e6a83947217dda198b1c8753aa6a7726cae5",
+    "components/packages/ui/src/LucideGenericIcon/index.js": "40052b0ccb9150e7fa190fdde463eba689d38036f5cb85d0b8d48579575f629c",
+    "components/packages/ui/src/Modal/Modal.story.vue": "82cbb32240299624357c45c961d2cd4d231a4387e5a17a48965abaceeee538b7",
+    "components/packages/ui/src/Modal/Modal.vue": "d644dff5054cb4948a142cf7094e757a564be1fd1af45780054755e2daa4bedc",
+    "components/packages/ui/src/Modal/index.js": "752c67acb8b2937aef836e43cbffc70fd3b38988b34c0a48677e1e6fe6bcd046",
+    "components/packages/ui/src/Notify/index.js": "2f8b7bf6bf14896c9882117b263dcd9cff5d6473a81faf700381889df421a3e5",
+    "components/packages/ui/src/Notify/useNotify.js": "141b0bcd7b097de155733d071dccd895420840b31eb376767b29eebd7d5c3c8b",
+    "components/packages/ui/src/Notify/useNotify.story.vue": "43df3dcb8f700b216f74b0a54ab09aeb1fc48f1bed39dd019e317cdc99163db2",
+    "components/packages/ui/src/OtpDisplay/OtpDisplay.story.vue": "07252ce4d375e9c2389c895a9758f5acada169a84bdf81bcc15e69e9d476633c",
+    "components/packages/ui/src/OtpDisplay/OtpDisplay.vue": "7ee1baaa6dfc2aa1ea63036a067852e057375dcd9b3a7a8df83c540d18150812",
+    "components/packages/ui/src/OtpDisplay/index.js": "a06a1d18a07ba86fcb97b7e9d8243efe991f954d5dcc0e3ca85e20f7ccce976e",
+    "components/packages/ui/src/OtpDisplay/twofaccountServiceStub.js": "6373a149fb5dc686eff64e536e48dd8e49159f27880bfc18a61771c5b59be2ed",
+    "components/packages/ui/src/QrContentDisplay/QrContentDisplay.vue": "6e94ed054802c430e4ab7f9441d13108faa0ccdc3b9ea870fd067fa4e0d560a2",
+    "components/packages/ui/src/QrContentDisplay/index.js": "ecb62b0f199bf0eefc17c639a324541991003a0324819e4f2013dc49bd437386",
+    "components/packages/ui/src/ResponsiveWidthWrapper/ResponsiveWidthWrapper.vue": "74886dac4bd621db6028bd8e4637c6805f0e90bee472b437594a9ade22d2bf15",
+    "components/packages/ui/src/ResponsiveWidthWrapper/index.js": "4a23c56c70bc4ac5df2606c35053b8747c758e0c864073a6d3b6272545281b57",
+    "components/packages/ui/src/SearchBox/SearchBox.story.vue": "706a009c76bc81aeb106274a132902fbc5e8a7224d577e97c39a2d870bd3a354",
+    "components/packages/ui/src/SearchBox/SearchBox.vue": "299173d1fdf74e5a7ea4feeff782185b202c86c591036d0216d2f1863ad220f4",
+    "components/packages/ui/src/SearchBox/index.js": "29df427ae1c40a578e84dd5afbc50cc640e50a8fde19d4e9f28580407c9873f6",
+    "components/packages/ui/src/Spinner/Spinner.story.vue": "b9b11f5a8e3851d1b9caeabe8126a97d612218f2973b466f30ef22fb0211c9e4",
+    "components/packages/ui/src/Spinner/Spinner.vue": "1c6f88366595c867e504674a79f910cec52200391412bcc2d9e11b335643fe1b",
+    "components/packages/ui/src/Spinner/index.js": "43b944e4268b1cd2cf906032917e8766eef3a6aabc8fdc318be10d838319636e",
+    "components/packages/ui/src/StackLayout/StackLayout.vue": "a6bb12a5af9c222074426476e76a5bc45e1ffdc06828b1fb5cfcb9aeb3e419d3",
+    "components/packages/ui/src/StackLayout/index.js": "8bd31cfd5d68477ff575d9519d8e42e8bb39eca952c2f6b9f37c1c02a4b62909",
+    "components/packages/ui/src/TabBar/TabBar.story.vue": "100b2509b80ccb740ac9b8c46c9ba316c3941e0076f4d2ff9c5889ccf6469620",
+    "components/packages/ui/src/TabBar/TabBar.vue": "9e5e30edcdff1ee0abdd45533b6ada1a2b21ff12dfad140d2f3d0322f79ba5d8",
+    "components/packages/ui/src/TabBar/index.js": "a6ef1251ffd88ed3e190ff54040146409652d233ba03ad7e7b75802f489de350",
+    "components/packages/ui/src/VueFooter/VueFooter.story.vue": "d9e0d3faab4847bbdd67f2844181fb719803877edf4b1d2d62217ce41c3a697f",
+    "components/packages/ui/src/VueFooter/VueFooter.vue": "2bf85e7336a8ab322e3d5a22c2a31da2660a29c18109b536582de2d3117f1523",
+    "components/packages/ui/src/VueFooter/index.js": "fe98b24d2cb1cded3d5737a8cdb250451da5919c647a07967eb63038397405ce",
+    "components/packages/ui/src/VueFooterContent/VueFooterContent.story.vue": "d9e0d3faab4847bbdd67f2844181fb719803877edf4b1d2d62217ce41c3a697f",
+    "components/packages/ui/src/VueFooterContent/VueFooterContent.vue": "5280e3c331cc81944b33fcd576f8ddcc5b19e4d33d1d26175beeb0a28b4537d2",
+    "components/packages/ui/src/VueFooterContent/index.js": "626919bbe7ee25b49ed664dfd4681550127cfb02cacdbb1fbeffb0d0d39b0677",
+    "components/packages/ui/src/i18n.js": "21fdef8f5cdf493764c3998a5bbb4991f7f5955d186233bfff5258678bf333bc",
+    "components/packages/ui/src/index.js": "4144e2f18823f5abc3b237ac150c186ff26df7e28d1b421816b0bbc8e75eee3b",
+    "components/packages/ui/src/useVisiblePassword.js": "d26fff0e373e955f7226e21227b5c9b8dff040a8ca0c4b82d4c20630e49290ca",
+    "components/packages/ui/vite.config.ts": "be1d98c2c792ce9b760386911e6021c03310a4232bc558d746da34297111b772"
+  },
+  "decisions": {
+    "confirmation.revoke_device": {
+      "source_sha256": "d7b1c8d70a6e9b8d9f6a5ed06c686e64ba49a11bb854d1ca5f3d8212e2441247",
+      "action": "translate",
+      "reason": "Revoke 表示撤销设备凭据，统一为“吊销”，避免误解为删除实体设备。"
+    },
+    "confirmation.unshare": {
+      "source_sha256": "7c689fecb0a36fd03b5daaa94ed223b18cc68f74bb75525aa9a8893bcb9e5a61",
+      "action": "translate",
+      "reason": "修正原译语法并保持停止分享的含义。"
+    },
+    "confirmation.bulk_unshare": {
+      "source_sha256": "db5946997bb25450c9fb070d67e4f6f5537e7763d22d4ac72b7231fada97d6de",
+      "action": "translate",
+      "reason": "原文为批量账号，原译误写为单个账号。"
+    },
+    "error.cannot_create_otp_without_secret": {
+      "source_sha256": "3d145e03e08220fa1f4837de58220466aae6a668396bd77aa2a97ca0c35aede2",
+      "action": "translate",
+      "reason": "secret 是 OTP 密钥，不是用户密码。"
+    },
+    "error.cannot_decipher_secret": {
+      "source_sha256": "aba83a192828087a30cca879f1682332e43986b966ad371c348852c063273947",
+      "action": "translate",
+      "reason": "补明确认失败对象为密钥，并保留 APP_KEY 与 .env 机器标识。"
+    },
+    "error.failed_to_decipher_pat": {
+      "source_sha256": "49183171b7aac800380f5f1795dce84f45da8ae9e947719db16ec988cc59c8e2",
+      "action": "translate",
+      "reason": "decipher 为解密，不是解码；保留 PAT 协议术语。"
+    },
+    "error.failed_to_derive_key": {
+      "source_sha256": "f8ac27a176e21baba8346e32db65869c1e4e10dd2873dc3d8bd37cc8a349c3f1",
+      "action": "translate",
+      "reason": "derive 表示密钥派生，不是获取已有密钥。"
+    },
+    "error.failed_to_regenerate_iv": {
+      "source_sha256": "66e5cd54035d3c7ec27617337158710bdd798312b4faf4e2be2a055ad99c1ea7",
+      "action": "translate",
+      "reason": "regenerate 与 IV 的含义原译未表达。"
+    },
+    "error.failed_to_set_autolock_delay": {
+      "source_sha256": "cef9ec7c410a71f60aaa722a446a03ce981bcf1675c1258e97383da0e63e9caa",
+      "action": "translate",
+      "reason": "补出失败的是延迟设置，非锁定操作本身。"
+    },
+    "error.indecipherable": {
+      "source_sha256": "e09acb01875963d3ebe064b1dbc916812025eeb7d2eac464823a9cf0acbfd8e2",
+      "action": "translate",
+      "reason": "decipher 的安全数据语义为解密，保留星号包裹。"
+    },
+    "error.no_active_tab_found": {
+      "source_sha256": "3bb3ef0e8c8dcdd518cfb01c045eca0fb7ffd8cd5808f63183d6a56ad77a1c45",
+      "action": "translate",
+      "reason": "浏览器 tab 是标签页，不是分类标签。"
+    },
+    "error.no_entry_was_of_type_public_key": {
+      "source_sha256": "d91ea935635f760810550d923b66f911572ee21117de870194788279ad8fac1b",
+      "action": "translate",
+      "reason": "public-key 是 WebAuthn 类型值，应保留机器值而不是译为“公钥”。"
+    },
+    "error.qrcode_cannot_be_read": {
+      "source_sha256": "831079b6c8457ec78745552767017f7175a89b311c45919e2c5c57c38e899bc3",
+      "action": "translate",
+      "reason": "unreadable 不等于已判定二维码无效。"
+    },
+    "error.reserved_name_please_choose_something_else": {
+      "source_sha256": "6cc43a84013a1827c562c016180f981f4d7ccbce2c542ce15d2fab0680ddb29e",
+      "action": "translate",
+      "reason": "reserved name 是保留名称，不是保留字符。"
+    },
+    "error.user_id_not_between_1_64": {
+      "source_sha256": "33d7d1bee653ca394b85ad863b5510c657f6ac4728764d7a6acad8451be4066d",
+      "action": "translate",
+      "reason": "between 范围包括端点；原译错误排除 1 和 64。"
+    },
+    "field.algorithm.help": {
+      "source_sha256": "202026eded6b5fde273ef1070394eccfb2080c14755ff1f825fb2c9ceb83efbf",
+      "action": "translate",
+      "reason": "OTP algorithm 并非一般加密算法，改为准确的生成算法。"
+    },
+    "field.copy_otp_on_display.help": {
+      "source_sha256": "b6eeaa32a82d6c91b857dceb4bb44c3695a3476f2d891fe0a341cc0e76bc9a32",
+      "action": "translate",
+      "reason": "翻译残留的完整英文 TOTP 展开名，同时保留标准缩写及浏览器限制。"
+    },
+    "field.enable_sharing.help": {
+      "source_sha256": "ff4e1daec46cd6bb0d7739dee8498c32287baaa9ad86b588e424213a8e4e2cdb",
+      "action": "translate",
+      "reason": "保留原文实例范围及仅所有者拥有完整操作权限的规则。"
+    },
+    "field.enable_all_users_sharing_scope.help_bis": {
+      "source_sha256": "5b7dae666141b2a96d7c700ab351768fc47b0729f98906d71ca72191871ab121",
+      "action": "translate",
+      "reason": "原译将现有分享的停用/恢复误写为用户能否设置范围。"
+    },
+    "field.extNewPassword.help": {
+      "source_sha256": "3acb9ed15e739414eab95fa7520931d2ea4104bcac8733a7d251d145ecccd1df",
+      "action": "translate",
+      "reason": "修正“当由需要时”错字。"
+    },
+    "field.extPassword.help": {
+      "source_sha256": "b3a02afeabb5dae8fed11a8e92e961426cb7ed76e5a92ec8541d6fc63585fa59",
+      "action": "translate",
+      "reason": "修正“当由需要时”错字。"
+    },
+    "field.findUserForShare.help": {
+      "source_sha256": "436599e67e578dc0709c186df919d8d5f214f0dfa3f78861922d07b0674a13b4",
+      "action": "translate",
+      "reason": "原译颠倒用户名模糊搜索与邮箱精确匹配的规则。"
+    },
+    "field.get_official_icons.help": {
+      "source_sha256": "8d095834ee567a16e932e8c12b8555d7889003f792f1af104f860392fd3a326a",
+      "action": "translate",
+      "reason": "修正漏字“获取”，明确图标对应签发方。"
+    },
+    "field.password_format": {
+      "source_sha256": "ac228e7170a021272e57a943b30d7d5ea8ff7973c99f8230d2c59431314bfb8a",
+      "action": "translate",
+      "reason": "此设置针对 OTP 显示分组，不是登录密码格式。"
+    },
+    "field.secret.help": {
+      "source_sha256": "018844c62874d47c36406f6d4ef30935dc1d461dffa6ff670c277b3602380d09",
+      "action": "translate",
+      "reason": "将同一 OTP 文案中的“安全码”统一为“验证码”。"
+    },
+    "field.show_email_in_footer.help": {
+      "source_sha256": "752cdfa3c89d092230b8463ccafc8e0784ec4cec15ee45609587071489286dbb",
+      "action": "translate",
+      "reason": "点击邮箱会打开菜单，不是直接跳转到链接。"
+    },
+    "field.show_in_chips.help": {
+      "source_sha256": "9d2c94bbef76d41b6c54e8e3cc2d6a45d27fdd5c369747efc563530759c34350",
+      "action": "translate",
+      "reason": "实际漏译；chips 按分组快捷切换控件语义译为标签按钮，关联设置名保持一致。"
+    },
+    "field.show_in_chips": {
+      "source_sha256": "503061b0c368ac46d80a347f05c604472142987f32e64d1f9b5bf54ce68e5d06",
+      "action": "translate",
+      "reason": "实际漏译；分组编辑页控制该组是否出现在快捷标签按钮中。"
+    },
+    "field.show_quick_nav_menus.help": {
+      "source_sha256": "c4534eed397223731d7aa2375255981bcdf65f094f1aac8a481b6b21c6ac6b25",
+      "action": "translate",
+      "reason": "实际漏译；保留仅桌面端可用的限制。"
+    },
+    "field.show_virtual_chips.help": {
+      "source_sha256": "05f314f51964f2b9da5576766e4fe8ce01bab6b2dbe7f7b9aff8ce3f48b5bfbb",
+      "action": "translate",
+      "reason": "实际漏译；虚拟分组名称与现有 label 保持一致。"
+    },
+    "field.show_virtual_chips": {
+      "source_sha256": "d06590faa57e1ba2ee004cdafa5c44be974ec0218feed09b5e6433cc724e3fc6",
+      "action": "translate",
+      "reason": "实际漏译；保留虚拟分组与真实分组区别。"
+    },
+    "field.store_icon_to_database.help": {
+      "source_sha256": "4912ae10350329aa0524c1eaece9ba8c5583d592d88344259a620a50a7fbeb7b",
+      "action": "translate",
+      "reason": "补回原译遗漏的文件系统仅用作缓存语义。"
+    },
+    "field.test_email": {
+      "source_sha256": "5d0ff2e002291f2dc8fb5cb4f25c6ec2a2321b9838af002c0d70670d318357d6",
+      "action": "translate",
+      "reason": "邮件设置术语采用简体常用表述。"
+    },
+    "field.use_chips_to_select_group.help": {
+      "source_sha256": "bdfd33e606109ab5151de56b0d3938829b5f15286e03cb829eb7e6c3b31f58e4",
+      "action": "translate",
+      "reason": "实际漏译；完整说明开启快捷按钮和关闭后选择器两种行为。"
+    },
+    "field.use_chips_to_select_group": {
+      "source_sha256": "3c9981c03199721518f5f4a7cf3f849c083405974dd6b008fe6a05edac3c1020",
+      "action": "translate",
+      "reason": "实际漏译；与 show_in_chips.help 中关联设置名一致。"
+    },
+    "field.use_encryption.help": {
+      "source_sha256": "eec119dc7d05071dd829c0e97fcfbaef95cce7ebad1e3ca60c20f3e235597b8f",
+      "action": "translate",
+      "reason": "统一“密钥”术语，保留 APP_KEY 与 .env 原样及密钥丢失不可恢复的警示。"
+    },
+    "field.use_webauthn_only.help": {
+      "source_sha256": "6f25f2bdeac809e10156997b99a5ba6e646232afa671bc34e14000247181de39",
+      "action": "translate",
+      "reason": "修正 WebAuth 拼写为协议标准名称 WebAuthn。"
+    },
+    "heading.options": {
+      "source_sha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39",
+      "action": "translate",
+      "reason": "Options 与 Preferences 区分，避免同一设置区含义混淆。"
+    },
+    "heading.preferences": {
+      "source_sha256": "66962f72a08883733c35df6f82a049b929f9579f19c4bc083ac99bead602eab3",
+      "action": "translate",
+      "reason": "Preferences 是用户偏好，不是服务端系统参数。"
+    },
+    "heading.session": {
+      "source_sha256": "6959b4159575d8dd76d9f3bbe2c6437904f861e7860c35abd18deffb1c3425a0",
+      "action": "translate",
+      "reason": "Session 是界面栏目名称，应译为会话，不是品牌或机器值。"
+    },
+    "heading.user_management": {
+      "source_sha256": "5a35ce25a2bd3791c55b5d48d80db67888a2050bad0d5d1c3ea6703a45abfe48",
+      "action": "translate",
+      "reason": "补回 management，区别普通“用户”标题。"
+    },
+    "label.active_group": {
+      "source_sha256": "7adc0d6508047cf9017964d8e1e61e9dcf8d3a89320dac985ec0552a5e3d28e8",
+      "action": "translate",
+      "reason": "默认分组选项 activeGroup 表示当前选中分组，原译“最近更新”不符。"
+    },
+    "label.check_all": {
+      "source_sha256": "a52ace420f2175d08b1577a1bea5445e36801229c074ef9ed6c55a73401fd9c2",
+      "action": "translate",
+      "reason": "Toolbar.vue 的 select-all 按钮是选择操作，不是账号分类。"
+    },
+    "label.half.legend": {
+      "source_sha256": "3e0bb779fcb835afc0d9f136ad966c55d69a1b5f64d74b87f8dd5f04b6e3dc8a",
+      "action": "translate",
+      "reason": "修正“拆分位”错字并表达等分含义。"
+    },
+    "label.livescan": {
+      "source_sha256": "ca759231f0ac6853f502153f56e8bcbf1ab902636edcfed87649aae113d23217",
+      "action": "translate",
+      "reason": "与图片上传入口区分，明确 live scan。"
+    },
+    "label.operating_system_short": {
+      "source_sha256": "343d012d58b2e98fef52dd34e82a4672a044d852e5c5261e9e1c21608127644a",
+      "action": "translate",
+      "reason": "OS 是操作系统，原译无依据增加版本含义。"
+    },
+    "label.options": {
+      "source_sha256": "d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39",
+      "action": "translate",
+      "reason": "与 heading.options、title.settings.options 的选项术语保持一致。"
+    },
+    "label.search": {
+      "source_sha256": "49c266baaaa70981ea188fa714d5c40cf13830d786a861c9943ae0d26a7f3fe9",
+      "action": "translate",
+      "reason": "删除末尾无语义的零宽字符。"
+    },
+    "label.select_accounts_to_show": {
+      "source_sha256": "d94d3f516f7720736703bdd43db51c41bc14a5aa238a50e4b4212d38ac1b5ecf",
+      "action": "translate",
+      "reason": "还原原文账号范围；分组选择器用于筛选账号，非将 accounts 直接译为分组。"
+    },
+    "label.unshare": {
+      "source_sha256": "43b9683230757f62b89594c7deff4ec603f60bd4e68739653663082693abe37d",
+      "action": "translate",
+      "reason": "按钮是撤销分享的操作，原译“未被分享”误作状态。"
+    },
+    "link.configure": {
+      "source_sha256": "6defafa2caa65304173956e3fbc26b6947c50bc769c08c3da32c1032fa6519d4",
+      "action": "translate",
+      "reason": "Configure 是配置操作，不是创建。"
+    },
+    "message.2fauth_description": {
+      "source_sha256": "1ad38d08b59067187edc5018832eef68fe3a835c275bf75022f00e0bd22ed680",
+      "action": "translate",
+      "reason": "Two-Factor Authentication 统一为双重身份验证，而不是笼统的两步验证。"
+    },
+    "message.2fauth_teaser": {
+      "source_sha256": "1ad38d08b59067187edc5018832eef68fe3a835c275bf75022f00e0bd22ed680",
+      "action": "translate",
+      "reason": "同一英文介绍使用一致译文，统一 2FA 术语。"
+    },
+    "message.direct_input": {
+      "source_sha256": "caafbca4344e63eaa98b617ed00370e063e1ce2f1c8866681ee277e74e629962",
+      "action": "translate",
+      "reason": "Import.vue 的 otpauth URI 输入方式标题，原译“原始数据”未表达操作方式。"
+    },
+    "message.firefox_popup_restriction_info": {
+      "source_sha256": "866db893715bcfbe1539fd00e187e0a642d80140f082e79c25550d5fe0b86433",
+      "action": "translate",
+      "reason": "原译误说该设置使浏览器能识别二维码；实际作用是自动打开扩展。"
+    },
+    "message.ensure_you_open_mail_in_trusted_device": {
+      "source_sha256": "803cce4768f6583b9d5b454bede115a59db0331c05c3a69f1fee8f60f26ad659",
+      "action": "translate",
+      "reason": "fully own 表达控制权，原译仅“信任”弱化要求。"
+    },
+    "message.notifications.twofaccount_ownership_transferred.check_shares": {
+      "source_sha256": "96507bd05aaf33d85d4748f259fdd3794ced5885bc6947ea2e401c38cbd9ccbc",
+      "action": "translate",
+      "reason": "通知发给转让后的新所有者，原译误写为建议转让前操作。"
+    },
+    "message.notifications.test_email_settings.reason": {
+      "source_sha256": "fe1a12c82879583127a85bb06fc402c573e4323b708bb63b3a14137ab642f93d",
+      "action": "translate",
+      "reason": "修正“上邮件”错字，并还原测试邮件配置的目的。"
+    },
+    "message.optional_rules_you_should_follow": {
+      "source_sha256": "6e50bca92ef50f3a94fb27d99fe60ded330b616ae92441d329bae8cee8bdd0f6",
+      "action": "translate",
+      "reason": "原文 highly 表明强烈建议，补回建议强度。"
+    },
+    "message.otpauth_export_format_desc": {
+      "source_sha256": "c1b5d3c164a32d2eea3c33e946f49c5e09687b601e07e7f93ce72082a6b34bd8",
+      "action": "translate",
+      "reason": "原译把从应用迁移误写为从 2FAuth 切换选项；保留 otpauth URI 格式名。"
+    },
+    "message.otpauth_export_format_sub": {
+      "source_sha256": "44a3e612bf2968e909a91a89164919fb8f949cd761b445bc355cb69c1c7c48da",
+      "action": "translate",
+      "reason": "修正 optauth 拼写为 otpauth，保留协议名。"
+    },
+    "message.reset_password_help": {
+      "source_sha256": "b53cef479021b444e27c60a6cda0e2b54583d0b47136f37865632c2c3a867c16",
+      "action": "translate",
+      "reason": "原译错误声称无需重置邮件即可设密码；还原先临时密码、再发送邮件的流程。"
+    },
+    "message.stream.live_scan_cant_start": {
+      "source_sha256": "8a232aa0b8e47da3d026da1ad0ab9acb63d0c50889b66657a2b45c24a03eb3b7",
+      "action": "translate",
+      "reason": "明确此处为实时相机扫描，保留原文表情。"
+    },
+    "message.stream.need_grant_permission.click_camera_icon": {
+      "source_sha256": "5e097c86aabe8a732e3558eea1879cc476b75fc1ac6c0200efbc984e84cbdc98",
+      "action": "translate",
+      "reason": "补回 slashed 图标特征，帮助用户找到被拒绝权限入口。"
+    },
+    "message.stream.secured_context_required.reason": {
+      "source_sha256": "ad8abf40d20e4843366ba00396f3f0d93d1f6d82c4a79999e7d4447ab56d99d8",
+      "action": "translate",
+      "reason": "secure context 是浏览器运行环境，不是 secure 字段。"
+    },
+    "message.stream.secured_context_required.solution": {
+      "source_sha256": "85edbeb255e61eb30734a4d20b4a10efa8dd16d0dfb11af304c5dd8ecdc604b5",
+      "action": "translate",
+      "reason": "保留可作为安全上下文例外的 localhost 字面主机名，避免泛化为任意本地主机。"
+    },
+    "message.submitted_data_parsed_now_accounts_are_awaiting_import": {
+      "source_sha256": "680ac5a0d54b95028efd62022e200b5fa307bee7459c21feaf616f7336b4869b",
+      "action": "translate",
+      "reason": "强调解析完成但尚未入库；原译可能被理解为已筛选未重复账号。"
+    },
+    "message.viewed_on": {
+      "source_sha256": "76d80551ef8395f795c2b83b370e90243cccb1bfad08d347b033bc7f3e9ea67f",
+      "action": "translate",
+      "reason": "保留时间插值并表达 viewed on 的时间语义。"
+    },
+    "message.you_can_also_paste": {
+      "source_sha256": "f5be723bfdbf86e6ce532f6c12198b2f48810f02cacb1d560550160252496441",
+      "action": "translate",
+      "reason": "原文允许粘贴，不限定桌面 Ctrl+V 快捷键，适用于移动端入口。"
+    },
+    "notification.x_valid_accounts_found": {
+      "source_sha256": "2ec02c26d648dde36362e80e6f1365fd6756f095c4edd857a5d2db4f90cf77c1",
+      "action": "translate",
+      "reason": "修正插值前缺少空格，保留 count。"
+    },
+    "passwords.password": {
+      "source_sha256": "b214b20c4f4bf923b50a80081b0feef0d825a566c9c221edaad20a9fd55828f4",
+      "action": "translate",
+      "reason": "characters 表示字符数，避免“位”被误解为仅数字。"
+    },
+    "message.is_long_enough": {
+      "source_sha256": "c815aa54a4ae20af1e0a994b515e0a3236afbce0588a24c33f60d60e5f6b66cf",
+      "action": "translate",
+      "reason": "最小密码长度单位明确为字符。"
+    },
+    "title.admin.users": {
+      "source_sha256": "8dc3b252b22a671054e80d777be710ee4e9d6c2b347f6cdb2199e2250ba0850d",
+      "action": "translate",
+      "reason": "补回 management，区别用户列表泛称。"
+    },
+    "title.showQRcode": {
+      "source_sha256": "e613ba49d5967d5965fccba2044858d819d2bf45c1fa3bc66d012e5099cf2255",
+      "action": "translate",
+      "reason": "QRcode.vue 是显示已有账号的二维码，原译反向写成从二维码获取账号。"
+    },
+    "tooltip.generate_a_test_password": {
+      "source_sha256": "83879f8328b2710a4f6e25c1d59fd7835a866986e45a5a09cff3d42cb7e6f047",
+      "action": "translate",
+      "reason": "Import.vue 的 OTP 预览操作生成验证码，不是登录密码。"
+    },
+    "tooltip.otpauth_export_format_sub": {
+      "source_sha256": "44a3e612bf2968e909a91a89164919fb8f949cd761b445bc355cb69c1c7c48da",
+      "action": "translate",
+      "reason": "修正 optauth 拼写，与导出说明同义 key 保持一致。"
+    },
+    "tooltip.search": {
+      "source_sha256": "49c266baaaa70981ea188fa714d5c40cf13830d786a861c9943ae0d26a7f3fe9",
+      "action": "translate",
+      "reason": "删除末尾无语义的零宽字符，并与 label.search 保持一致。"
+    },
+    "tooltip.show_last_month_log": {
+      "source_sha256": "880881ed62c9826f6ee385b26fd0f7fc1fc7550e2e418d60323e9b8eee3c433b",
+      "action": "translate",
+      "reason": "LogViewer.vue 使用滚动月数过滤，原译“上个月”误指自然月。"
+    },
+    "tooltip.show_one_year_log": {
+      "source_sha256": "29078826193b9264c92c194ace3e3e668777bf8b8a52d37c252f6c308797ae7a",
+      "action": "translate",
+      "reason": "LogViewer.vue 使用 12 个月滚动范围，原译“上一年”误指自然年。"
+    },
+    "tooltip.sort_by_date_asc": {
+      "source_sha256": "37cc2cc14bc78f3061e1b995a658c472fc29b50b2e99b36e2cb8bf0e3b40c0e2",
+      "action": "translate",
+      "reason": "明确 least recent first 的排序方向，修正原译含混的“倒序最近访问”。"
+    },
+    "tooltip.sort_by_date_desc": {
+      "source_sha256": "e38e160968bb745e92d73ce499cf75a3b06425ef075462651bdd143231a7f4a3",
+      "action": "translate",
+      "reason": "明确 most recent first 的排序方向，修正原译含混的“顺序最近访问”。"
+    },
+    "tooltip.unshare_selected_accounts": {
+      "source_sha256": "f2e955180ea502317e3a05c350c303d4944f992914bec39fbf9e087096764960",
+      "action": "translate",
+      "reason": "原文对象是所选账号及其所有分享，原译误写为选中用户权限。"
+    },
+    "validation.alpha_num": {
+      "source_sha256": "a3925b118ad61a544a781abe2477d45793d6dd6e707a0022eb8e3b1bed3bd276",
+      "action": "translate",
+      "reason": "only contain 不要求字母数字同时出现，修正原译逻辑。"
+    },
+    "validation.ascii": {
+      "source_sha256": "99db1ac6c3da0dda13ba5ccad63716930d518c429b701493c07617d3cf1da0ab",
+      "action": "translate",
+      "reason": "补回 single-byte 与数字，原译“单个字母”错误。"
+    },
+    "validation.between.array": {
+      "source_sha256": "20d0acc2db932c1baf1e3eb47083727e9b2900ebc28d3847a1c0b8dc0bdd2ced",
+      "action": "translate",
+      "reason": "数组长度单位是元素，不是位数。"
+    },
+    "validation.custom.email.IsValidEmailList": {
+      "source_sha256": "07948992e8bf3c1d0b85cf7707b8f0d7aae9984195e70b7fb5f3e0a107d754cd",
+      "action": "translate",
+      "reason": "未转义的竖线被 Vue-i18n 解析为 plural 分隔符；使用 literal 插值显示管道符。"
+    },
+    "validation.distinct": {
+      "source_sha256": "b75021d458e83e04d36275877873e3d00bc49ca4d9207a73ab892325862cf0c4",
+      "action": "translate",
+      "reason": "distinct 校验重复值，不等同于数据库已存在。"
+    },
+    "validation.gt.array": {
+      "source_sha256": "2e5f92bc94c53700fcbd74712fbb8e3e8a7c3ee33aefcb348e89a9b1abc57a7e",
+      "action": "translate",
+      "reason": "greater than 为严格大于，原译“至少”错误包含等值。"
+    },
+    "validation.gt.string": {
+      "source_sha256": "47cda3315f6e3a4eb65117926eed40ddf08b860601af4e0b16ff2c3e6ba5c785",
+      "action": "translate",
+      "reason": "greater than 为严格大于，原译“至少”错误包含等值。"
+    },
+    "validation.lt.array": {
+      "source_sha256": "9ce3d788dfbb39f4148155cc9a104d989e1be8fffdc3b5e099fb04c826dfb7cd",
+      "action": "translate",
+      "reason": "less than 为严格小于，原译“最多”错误包含等值。"
+    },
+    "validation.max_digits": {
+      "source_sha256": "5bdeab0290c00c4cda379051825fa9860c5b19da5b692515d6f18c98ebc347e9",
+      "action": "translate",
+      "reason": "not more than 包括最大值，原译“少于”错误排除等值。"
+    },
+    "validation.max.numeric": {
+      "source_sha256": "e956c9e492e696eeafa15b5961a7277d8e2ce42c1a7b0eb66e3b7b986dd9513d",
+      "action": "translate",
+      "reason": "not greater than 包括等值，原译错误使用严格小于。"
+    },
+    "validation.missing_if": {
+      "source_sha256": "08d8da7fc6c427c292ef0f160b1ed8b7e372b8960d6b6957911b2ef292efdd8d",
+      "action": "translate",
+      "reason": "missing 要求字段不存在，不是允许空字段。"
+    },
+    "validation.missing_unless": {
+      "source_sha256": "e91429c6133c70c26386f9e5c09001055c519aaca558c109a867accd92fb7ae8",
+      "action": "translate",
+      "reason": "missing 要求字段不存在，不是允许空字段。"
+    },
+    "validation.missing_with_all": {
+      "source_sha256": "da04f0ad40478eeae522f5620fece11ba7bb51ee480cf9aeafcc9b5af2c5e144",
+      "action": "translate",
+      "reason": "修正 :value 为 :values，并表达 all 条件及字段不得出现。"
+    },
+    "validation.missing_with": {
+      "source_sha256": "87c92d53b3198504befd4f61c2edc298ec529ee5d471719154b66b2b737eb996",
+      "action": "translate",
+      "reason": "修正 :value 为 :values，并表达任一条件及字段不得出现。"
+    },
+    "validation.missing": {
+      "source_sha256": "c936fd0b01c7ad260d0246da4222f12e61a87c18377d0a3ab94fbcc65d5e5957",
+      "action": "translate",
+      "reason": "missing 要求字段不存在，不是允许空字段。"
+    },
+    "validation.onlyCustomOtpWithUri": {
+      "source_sha256": "02d8a5d22420fc6e48b13dc77d5147ce6e38aa3794369ea0355d49cea63d40a7",
+      "action": "translate",
+      "reason": "补回 only，禁止与其他参数组合；保留 uri 与 custom_otp 机器值。"
+    },
+    "validation.present_if": {
+      "source_sha256": "ae7286f368298e957c6e42da8f0f8797be0bd9e8be0e9fc5c51f5e3f535d6db2",
+      "action": "translate",
+      "reason": "present 要求字段存在，与值不能为空的 required 有区别。"
+    },
+    "validation.present_unless": {
+      "source_sha256": "8e02ce93428f43550c09137e54b31b393913ddef0be6edb661e98996610c92a0",
+      "action": "translate",
+      "reason": "present 要求字段存在，与值不能为空的 required 有区别。"
+    },
+    "validation.present_with_all": {
+      "source_sha256": "241b4b3271780400848d7b975eb5bc26c6c22cc9468bd20620ccc56db0c404fd",
+      "action": "translate",
+      "reason": "补回 all 条件，准确表达 present 为字段存在。"
+    },
+    "validation.present_with": {
+      "source_sha256": "65820a35450013e2b314101c0b2da2b5731bc2b5a6f58f19d66a187b27872052",
+      "action": "translate",
+      "reason": "准确表达任一字段条件与 present 语义。"
+    },
+    "validation.required_if_accepted": {
+      "source_sha256": "cd33137996f3c256547f7cfbff7cef958dc1bc3fb9e4d653e64231e0cbc94e1d",
+      "action": "translate",
+      "reason": "accepted 是接受状态判断，不是字段存在性判断。"
+    },
+    "validation.required_if_declined": {
+      "source_sha256": "4eb182ff96a399f8ed011765988bb4d8a2180528976aff339fdb2936a05d7e8b",
+      "action": "translate",
+      "reason": "declined 是拒绝状态判断，不是字段不存在判断。"
+    },
+    "validation.required_unless": {
+      "source_sha256": "358487b38510e82e2311e77c7df7f32efd6f0834cfaf58dfe0f4914a28622a38",
+      "action": "translate",
+      "reason": "in 表示值集合归属，不是单个等值判断。"
+    },
+    "validation.required_with_all": {
+      "source_sha256": "0d986487fc866bf268c841feff3aa4e1182e58b100eb959f603ef2eaf228abe2",
+      "action": "translate",
+      "reason": "required_with_all 要求所有依赖字段都有值，补回 all 条件。"
+    },
+    "validation.required_with": {
+      "source_sha256": "97d2b5fff552e94aa19490a01418773e7357f8f9087b9afe476647bb5ca3364e",
+      "action": "translate",
+      "reason": "required_with 条件是任一依赖字段有值，与 present 区分。"
+    },
+    "validation.required_without_all": {
+      "source_sha256": "b6e2ce085b4ca93dd888a9c6a28089e33e6490f4743755adc5883773aecd3156",
+      "action": "translate",
+      "reason": "required_without_all 条件包括空值，原译仅不存在不完整。"
+    },
+    "validation.required_without": {
+      "source_sha256": "49eba59c53c6b22cb45ddd8d816fb6d7a3c831a9cfd5cfc3fe1b84178d7c8c87",
+      "action": "translate",
+      "reason": "required_without 条件是任一缺值，不是所有不存在。"
+    },
+    "label.api": {
+      "source_sha256": "c8e5998f6a3955c21d858936fe05c69621724d7f825c6e17793002a0fa798bf9",
+      "action": "retain",
+      "reason": "API 是通用接口缩写，界面分类保留原文。"
+    },
+    "label.github": {
+      "source_sha256": "1720d8eaff790da6af4406905ba663d0cc6a6cea2b3e54e7384ac334a037f59d",
+      "action": "retain",
+      "reason": "Github 为品牌名称，保留本次上游拼写；不改为中文音译。"
+    },
+    "label.half_digit": {
+      "source_sha256": "f7a760da18d9f819256ba71c078ed926b5d7fe47f6f1b132eb9dcd3395585193",
+      "action": "retain",
+      "reason": "1234 5678 是验证码等分格式的可见数字示例，保留数字与空格。"
+    },
+    "label.oauth": {
+      "source_sha256": "27f8943c6eba9818cd7c216ef06851bf832cf6fe9c0240fa32cb152a484b011f",
+      "action": "retain",
+      "reason": "OAuth 是认证协议名称，保留标准拼写。"
+    },
+    "label.openid": {
+      "source_sha256": "f2c5ca77b353f96dffe6df722a1f36cddf6e502c744ea9c59459d9144156494f",
+      "action": "retain",
+      "reason": "OpenID 是身份协议名称，保留标准拼写。"
+    },
+    "label.pair_digit": {
+      "source_sha256": "0ec5b152ff2b4516154ce9851eb24c40e474947a3ffa6c53cc7f9c54cea07edb",
+      "action": "retain",
+      "reason": "12 34 56 是每两位分组的验证码格式示例，保留数字与空格。"
+    },
+    "label.trio_digit": {
+      "source_sha256": "4981aa0a50d563040519e9032b5d74367b1d129e239a1ba82667a57333866494",
+      "action": "retain",
+      "reason": "123 456 是每三位分组的验证码格式示例，保留数字与空格。"
+    },
+    "label.webauthn": {
+      "source_sha256": "e320df5f1d6c9aa193fe6bc1023f31467a5f7b19f7d03d4e43bc2a1328b44313",
+      "action": "retain",
+      "reason": "WebAuthn 是浏览器认证标准名称，保留标准拼写。"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "source_sha": "2023d6873eafa89d50cc331ca02c4d46acd60913",
+  "base_files": {
+    "package.json": "1e16e94e075a2a12201822859ecd7e1ce3ec6f9f1f10e7215fbb32ea6eeecb1b",
+    "package-lock.json": "4e08bf4eda8a62bfcb07740520cd3ba2a3cf33ec37021aed13a6af73d1b95f18"
+  },
+  "additional_dependencies": {
+    "@trimjs/web-app": "0.4.2",
+    "zxing-wasm": "1.1.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "components": {
+    "url": "https://github.com/Bubka/2FAuth-Components.git",
+    "revision": "98b889f3d785f79a20397e12097a664846672ee7",
+    "ref": "98b889f3d785f79a20397e12097a664846672ee7"
+  },
+  "licenses": {
+    "upstream": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+    "components": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+  },
+  "pnpm_version": "10.8.0",
+  "node_major": 24,
+  "go_version": "go1.26.9"
+}
